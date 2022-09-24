@@ -1,0 +1,75 @@
+/* .sidebars{
+    position:sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebars a{
+    text-decoration: none;
+    color: white;
+}
+
+.qlsp a, .qldh a, .qlkh a{
+    display: flex;
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+
+.qlsp a:hover,
+.qldh a:hover, 
+.qlkh a:hover{
+    color: grey;
+}
+
+.sp{
+    margin-right: 15%;
+}
+.dh{
+    margin-right: 16%;
+}
+.kh{
+    margin-right: 9%;
+}
+.arrow-right-1{
+    display: none;
+}
+.arrow-right-2{
+    display: none;
+}
+.arrow-right-3{
+    display: none;
+}
+
+.navbar{
+    font-size: 25px;
+}
+
+.justify i, 
+.icon-menu i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icon-menu i{
+    padding-right: 15px;
+}
+
+.main-admin{
+    background-color: rgba(206, 208, 215, 0.685);
+}
+.widget-facebook{
+    background-color: rgb(12, 12, 219);
+}
+
+.widget-google {
+    background-color: red;
+}
+
+.widget-twitter{
+    background-color: rgb(12, 167, 219);
+}
+
+.footer-admin{
+    background-color: rgb(240, 237, 237);
+    color: grey;
+} */

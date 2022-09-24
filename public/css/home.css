@@ -1,0 +1,96 @@
+/* ///// video aboutus.html /////////// */
+
+
+/* main{
+  background-color: rgb(213, 211, 211);
+} */
+
+.vid,
+.img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.vid {
+    margin-top: 5%;
+}
+
+
+/* .section-3,.section-4{
+    margin-top: 5%;
+    
+  } */
+
+section {
+    padding: 5%;
+}
+
+.section3-img {
+    border-radius: 50%;
+}
+
+.home-thumbnail {
+    padding: 0;
+}
+
+
+/* .section-1{
+    padding:8% 10% 0% 10%;
+  } */
+
+
+/* p{
+    color: #000000;
+    text-decoration: none;
+    font-weight:bolder;
+    background-color: aquamarine;
+    border: 2px green;
+    border: #24262b;
+  } */
+
+
+/* .carousel-control-prev-icon, .carousel-control-next-icon{
+    color: black;
+    font-weight: bolder;
+  } */
+
+
+/* span{
+    font-weight: bolder;
+    text-decoration: none; 
+    background-color: #000000;
+    opacity: 0.6;
+    border-radius: 50%;
+  } */
+
+.triangle-left {
+    border-top: 12px solid transparent;
+    border-right: 23px solid rgb(178, 172, 172);
+    border-bottom: 12px solid transparent;
+}
+
+.triangle-right {
+    border-top: 12px solid transparent;
+    border-left: 23px solid rgb(178, 172, 172);
+    border-bottom: 12px solid transparent;
+}
+
+.triangle-left:hover {
+    opacity: 0.5;
+}
+
+.triangle-right:hover {
+    opacity: 0.5;
+}
+
+.carousel-inner img {
+    align-items: center;
+    width: 100%;
+}
+
+
+/* /////advertise//// */
+
+.advertise {
+    font-size: 1vw;
+}

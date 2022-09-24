@@ -1,0 +1,53 @@
+/* //////////Cream lipstick///////// */
+
+* {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+.shop_now,
+.click_me {
+    color: #000000;
+    letter-spacing: 0.2vw;
+    background-color: #afa9a9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 90%;
+    font-family: Roboto;
+    border: #000000;
+    opacity: 1;
+    transition: 0.3s;
+    width: 100%;
+    /* margin-top: 1%;
+    margin-bottom: 5%; */
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* .thumbnail{
+  opacity: 0.75;
+} */
+
+
+/* .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+ */
+
+
+/* .title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+} */

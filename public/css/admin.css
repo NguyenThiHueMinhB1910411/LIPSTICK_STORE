@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppings', sans-serif !important;
+}
+
+.sidebars {
+    position: sticky;
+    background-color: #ff8080;
+}
+
+.sidebars a {
+    text-decoration: none;
+    color: white;
+}
+
+.order_mng a,
+.customer_order a,
+.product_mng a {
+    display: flex;
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+
+.order_mng a:hover,
+.customer_order a:hover,
+.product_mng a:hover {
+    color: grey;
+}
+
+.arrow-right-1 {
+    display: none;
+}
+
+.arrow-right-2 {
+    display: none;
+}
+
+.arrow-right-3 {
+    display: none;
+}
+
+.navbar {
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.setting {
+    font-size: 18px;
+}
+
+.icon-menu i {
+    padding-right: 15px;
+}
+
+.widget-facebook {
+    background-color: #0047b3;
+}
+
+.widget-google {
+    background-color: #ff751a;
+}
+
+.widget-twitter {
+    background-color: #4d94ff;
+}
+
+.footer-admin {
+    background-color: rgb(240, 237, 237);
+    color: rgb(96, 92, 92);
+}

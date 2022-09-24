@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="ie8" lang="vi" prefix="og: https://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="vi" prefix="og: https://ogp.me/ns#"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)] lang="vi" prefix="og: https://ogp.me/ns#"><![endif]-->
+<html lang="vi" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8" /><script data-cfasync="false">var _wpmeteor={"rdelay":86400000,"elementor-animations":true,"v":"2.3.10"};if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]wpmeteordisable/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?wpmeteordisable=1"}else{document.location.href=href.replace("#","?wpmeteordisable=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&wpmeteordisable=1"}else{document.location.href=href.replace("#","&wpmeteordisable=1#")}}}}</script><script data-cfasync="false">!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="/",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";n.r(e);var r=new(function(){function t(){this.l=[]}var e=t.prototype;return e.emit=function(t,e){void 0===e&&(e=null),this.l[t]&&this.l[t].forEach((function(t){return t(e)}))},e.on=function(t,e){var n;(n=this.l)[t]||(n[t]=[]),this.l[t].push(e)},e.off=function(t,e){this.l[t]=(this.l[t]||[]).filter((function(t){return t!==e}))},t}()),o=new Date,i=document,a=function(){function t(){this.known=[]}var e=t.prototype;return e.init=function(){var t,e=this,n=!1,o=function(t){if(!n&&t&&t.fn&&!t.__wpmeteor){var r=function(e){return i.addEventListener("DOMContentLoaded",(function(n){e.bind(i)(t,n)})),this};e.known.push([t,t.fn.ready,t.fn.init.prototype.ready]),t.fn.ready=r,t.fn.init.prototype.ready=r,t.__wpmeteor=!0}return t};window.jQuery&&(t=o(window.jQuery)),Object.defineProperty(window,"jQuery",{get:function(){return t},set:function(e){return t=o(e)}}),r.on("l",(function(){return n=!0}))},e.unmock=function(){this.known.forEach((function(t){var e=t[0],n=t[1],r=t[2];e.fn.ready=n,e.fn.init.prototype.ready=r}))},t}(),c={};!function(t,e){try{var n=Object.defineProperty({},e,{get:function(){c[e]=!0}});t.addEventListener(e,null,n),t.removeEventListener(e,null,n)}catch(t){}}(window,"passive");var u=c,f=window,d=document,s=["mouseover","keydown","touchmove","touchend","wheel"],l=["mouseover","mouseout","touchstart","touchmove","touchend","click"],p="data-wpmeteor-",v=function(){function t(){}return t.prototype.init=function(t){var e=!1,n=!1,o=function t(o){e||(e=!0,s.forEach((function(e){return d.body.removeEventListener(e,t,u)})),clearTimeout(n),location.href.match(/wpmeteornopreload/)||r.emit("pre"),r.emit("fi"))},i=function(t){var e=new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0});return Object.defineProperty(e,"target",{writable:!1,value:t.target}),e};t<1e4&&r.on("i",(function(){e||(n=setTimeout(o,t))}));var a=[],c=function(t){t.target&&"dispatchEvent"in t.target&&("click"===t.type?(t.preventDefault(),t.stopPropagation(),a.push(i(t))):"touchmove"!==t.type&&a.push(t),t.target.setAttribute(p+t.type,!0))};r.on("l",(function(){var t;for(l.forEach((function(t){return f.removeEventListener(t,c)}));t=a.shift();){var e=t.target;e.getAttribute(p+"touchstart")&&e.getAttribute(p+"touchend")&&!e.getAttribute(p+"click")?(e.getAttribute(p+"touchmove")||(e.removeAttribute(p+"touchmove"),a.push(i(t))),e.removeAttribute(p+"touchstart"),e.removeAttribute(p+"touchend")):e.removeAttribute(p+t.type),e.dispatchEvent(t)}}));d.addEventListener("DOMContentLoaded",(function t(){s.forEach((function(t){return d.body.addEventListener(t,o,u)})),l.forEach((function(t){return f.addEventListener(t,c)})),d.removeEventListener("DOMContentLoaded",t)}))},t}(),m=document,h=m.createElement("span");h.setAttribute("id","elementor-device-mode"),h.setAttribute("class","elementor-screen-only");var y=window,b=document,g=b.documentElement,w=function(t){return t.getAttribute("class")||""},E=function(t,e){return t.setAttribute("class",e)},L=function(){window.addEventListener("load",(function(){var t=(m.body.appendChild(h),getComputedStyle(h,":after").content.replace(/"/g,"")),e=Math.max(g.clientWidth||0,y.innerWidth||0),n=Math.max(g.clientHeight||0,y.innerHeight||0),o=["_animation_"+t,"animation_"+t,"_animation","_animation","animation"];Array.from(b.querySelectorAll(".elementor-invisible")).forEach((function(t){var i=t.getBoundingClientRect();if(i.top+y.scrollY<=n&&i.left+y.scrollX<e)try{var a=JSON.parse(t.getAttribute("data-settings"));if(a.trigger_source)return;for(var c,u=a._animation_delay||a.animation_delay||0,f=0;f<o.length;f++)if(a[o[f]]){o[f],c=a[o[f]];break}if(c){var d=w(t),s="none"===c?d:d+" animated "+c,l=setTimeout((function(){E(t,s.replace(/\belementor\-invisible\b/,"")),o.forEach((function(t){return delete a[t]})),t.setAttribute("data-settings",JSON.stringify(a))}),u);r.on("fi",(function(){clearTimeout(l),E(t,w(t).replace(new RegExp("\b"+c+"\b"),""))}))}}catch(t){console.error(t)}}))}))},S=document,A="querySelectorAll",O="data-in-mega_smartmenus",_="DOMContentLoaded",j="readystatechange",P="message",k=console.error;!function(t,e,n,i,c,u,f,d,s){var l,p,m=t.constructor.name+"::",h=e.constructor.name+"::",y=function(e,n){n=n||t;for(var r=0;r<this.length;r++)e.call(n,this[r],r,this)};"NodeList"in t&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=y),"HTMLCollection"in t&&!HTMLCollection.prototype.forEach&&(HTMLCollection.prototype.forEach=y),_wpmeteor["elementor-animations"]&&L(),_wpmeteor["elementor-pp"]&&function(){var t=S.createElement("div");t.innerHTML='<span class="sub-arrow --wp-meteor"><i class="fa" aria-hidden="true"></i></span>';var e=t.firstChild;S.addEventListener("DOMContentLoaded",(function(){Array.from(S[A](".pp-advanced-menu ul")).forEach((function(t){if(!t.getAttribute(O)){(t.getAttribute("class")||"").match(/\bmega\-menu\b/)&&t[A]("ul").forEach((function(t){t.setAttribute(O,!0)}));var n=function(t){for(var e=[];t=t.previousElementSibling;)e.push(t);return e}(t),r=n.filter((function(t){return t})).filter((function(t){return"A"===t.tagName})).pop();if(r||(r=n.map((function(t){return Array.from(t[A]("a"))})).filter((function(t){return t})).flat().pop()),r){var o=e.cloneNode(!0);r.appendChild(o),new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){if(1===t.nodeType&&"SPAN"===t.tagName)try{r.removeChild(o)}catch(t){}}))}))})).observe(r,{childList:!0})}}}))}))}();var b,g,w=[],E=[],x={},C=!1,T=!1,M=setTimeout;var N=e[n].bind(e),R=e[i].bind(e),H=t[n].bind(t),D=t[i].bind(t);"undefined"!=typeof EventTarget&&(b=EventTarget.prototype.addEventListener,g=EventTarget.prototype.removeEventListener,N=b.bind(e),R=g.bind(e),H=b.bind(t),D=g.bind(t));var z,q=e.createElement.bind(e),B=e.__proto__.__lookupGetter__("readyState").bind(e);Object.defineProperty(e,"readyState",{get:function(){return z||B()},set:function(t){return z=t}});var Q=function(t){return E.filter((function(e,n){var r=e[0],o=(e[1],e[2]);if(!(t.indexOf(r.type)<0)){o||(o=r.target);try{for(var i=o.constructor.name+"::"+r.type,a=0;a<x[i].length;a++){if(x[i][a])if(!W[i+"::"+n+"::"+a])return!0}}catch(t){}}})).length},W={},I=function(t){E.forEach((function(n,r){var o=n[0],i=n[1],a=n[2];if(!(t.indexOf(o.type)<0)){a||(a=o.target);try{var c=a.constructor.name+"::"+o.type;if((x[c]||[]).length)for(var u=0;u<x[c].length;u++){var f=x[c][u];if(f){var d=c+"::"+r+"::"+u;if(!W[d]){W[d]=!0,e.readyState=i;try{f.hasOwnProperty("prototype")&&f.prototype.constructor!==f?f(o):f.bind(a)(o)}catch(t){k(t,f)}}}}}catch(t){k(t)}}}))};N(_,(function(t){E.push([t,e.readyState,e])})),N(j,(function(t){E.push([t,e.readyState,e])})),H(_,(function(n){E.push([n,e.readyState,t])})),H(d,(function(n){E.push([n,e.readyState,t]),G||I([_,j,P,d])}));var J=function(n){E.push([n,e.readyState,t])};H(P,J),r.on("fi",(function(){T=!0,G=!0,e.readyState="loading",M(X)}));H(d,(function t(){C=!0,T&&!G&&(e.readyState="loading",M(X)),D(d,t)})),(new v).init(_wpmeteor.rdelay);var F=new a;F.init();var G=!1,X=function n(){var o=w.shift();if(o)if(o[c]("data-src"))o.hasAttribute("data-async")?(U(o),M(n)):U(o,n);else if("javascript/blocked"==o.type)U(o),M(n);else if(o.hasAttribute("data-wpmeteor-onload")){var i=o[c]("data-wpmeteor-onload");try{new Function(i).call(o)}catch(t){k(t)}M(n)}else M(n);else if(Q([_,j,P]))I([_,j,P]),M(n);else if(T&&C)if(Q([d,P]))I([d,P]),M(n);else{if(t.RocketLazyLoadScripts)try{RocketLazyLoadScripts.run()}catch(t){k(t)}e.readyState="complete",D(P,J),(x[m+"message"]||[]).forEach((function(t){H(P,t)})),F.unmock(),Z=N,$=R,nt=H,rt=D,G=!1,setTimeout((function(){return r.emit("l")}))}else G=!1},Y=function(t){for(var n=e.createElement("SCRIPT"),r=t.attributes,o=r.length-1;o>=0;o--)n.setAttribute(r[o].name,r[o].value);return n.bypass=!0,n.type=t.hasAttribute("data-wpmeteor-module")?"module":"text/javascript",(t.text||"").match(/^\s*class RocketLazyLoadScripts/)?n.text=t.text.replace(/^\s*class RocketLazyLoadScripts/,"window.RocketLazyLoadScripts=class").replace("RocketLazyLoadScripts.run();",""):n.text=t.text,n[f]("data-wpmeteor-after"),n},K=function(t,e){var n=t.parentNode;n&&n.replaceChild(e,t)},U=function(t,e){if(t[c]("data-src")){var r=Y(t),o=b?b.bind(r):r[n].bind(r);if(e){var i=function(){return M(e)};o(d,i),o(s,i)}r.src=t[c]("data-src"),r[f]("data-src"),K(t,r)}else"javascript/blocked"===t.type?K(t,Y(t)):onLoad&&onLoad()},V=function(t,e){var n=(x[t]||[]).indexOf(e);if(n>=0)return x[t][n]=void 0,!0},Z=function(t,e){if(e&&(t===_||t===j)){var n=h+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return N.apply(void 0,[t,e].concat(o))},$=function(t,e){t===_&&V(h+t,e);return R(t,e)};Object.defineProperties(e,((l={})[n]={get:function(){return Z},set:function(){return Z}},l[i]={get:function(){return $},set:function(){return $}},l)),r.on("pre",(function(){return w.forEach((function(t){var n=t[c]("data-src");if(n){var r=q("link");r.rel="pre"+d,r.as="script",r.href=n,r.crossorigin=!0,e.head.appendChild(r)}}))})),N(_,(function(){e.querySelectorAll("script[data-wpmeteor-after]").forEach((function(t){return w.push(t)}));var t=["link"].map((function(t){return t+"[data-wpmeteor-onload]"})).join(",");e.querySelectorAll(t).forEach((function(t){return w.push(t)}))}));var tt=function(t){if(e.currentScript)try{var n=e.currentScript.parentElement,r=e.currentScript.nextSibling,i=document.createElement("div");i.innerHTML=t,Array.from(i.childNodes).forEach((function(t){"SCRIPT"===t.nodeName?n.insertBefore(Y(t),r):n.insertBefore(t,r)}))}catch(t){console.error(t)}else k((new Date-o)/1e3,"document.currentScript not set",t)},et=function(t){return tt(t+"\n")};Object.defineProperties(e,{write:{get:function(){return tt},set:function(t){return tt=t}},writeln:{get:function(){return et},set:function(t){return et=t}}});var nt=function(t,e){if(e&&(t===d||t===_||t===P)){var n=t===_?h+t:m+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return H.apply(void 0,[t,e].concat(o))},rt=function(t,e){t===d&&V(t===_?h+t:m+t,e);return D(t,e)};Object.defineProperties(t,((p={})[n]={get:function(){return nt},set:function(){return nt}},p[i]={get:function(){return rt},set:function(){return rt}},p));var ot=function(t){var e;return{get:function(){return e},set:function(n){return e&&V(t,n),x[t]=x[t]||[],x[t].push(n),e=n}}},it=ot(m+d);Object.defineProperty(t,"onload",it),N(_,(function(){Object.defineProperty(e.body,"onload",it)})),Object.defineProperty(e,"onreadystatechange",ot(h+j)),Object.defineProperty(t,"onmessage",ot(m+P));var at=1,ct=function(){--at||r.emit("i")};H(d,(function t(){M((function(){e.querySelectorAll("img").forEach((function(t){if(!t.complete&&(t.currentSrc||t.src)&&"lazy"==!(t.loading||"").toLowerCase()||(r=t.getBoundingClientRect(),o=window.innerHeight||document.documentElement.clientHeight,i=window.innerWidth||document.documentElement.clientWidth,r.top>=-1*o*1&&r.left>=-1*i*1&&r.bottom<=2*o&&r.right<=2*i)){var e=new Image;e[n](d,ct),e[n](s,ct),e.src=t.currentSrc||t.src,at++}var r,o,i})),ct()})),D(d,t)}));var ut=Object.defineProperty;Object.defineProperty=function(n,r,o){return n===t&&["jQuery","onload"].indexOf(r)>=0||(n===e||n===e.body)&&["readyState","write"].indexOf(r)>=0?n:ut(n,r,o)},Object.defineProperties=function(t,e){for(var n in e)Object.defineProperty(t,n,e[n]);return t}}(window,document,"addEventListener","removeEventListener","getAttribute",0,"removeAttribute","load","error")}]);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://phongreviews.com/xmlrpc.php" />
+
+<title>Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng</title>
+<meta name="description" content="Các dòng sản phẩm son dưỡng môi của Dior được đánh giá cao về khả năng làm mềm và bảo vệ môi, đặc biệt là trong thời tiết mùa lạnh. Vậy để tìm  hiểu chi tiết" />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="https://phongreviews.com/son-duong-dior/" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng" />
+<meta property="og:description" content="Các dòng sản phẩm son dưỡng môi của Dior được đánh giá cao về khả năng làm mềm và bảo vệ môi, đặc biệt là trong thời tiết mùa lạnh. Vậy để tìm  hiểu chi tiết" />
+<meta property="og:url" content="https://phongreviews.com/son-duong-dior/" />
+<meta property="og:site_name" content="Phong Reviews" />
+<meta property="article:publisher" content="https://www.facebook.com/phongreviews/" />
+<meta property="article:author" content="https://www.facebook.com/johntran288" />
+<meta property="article:section" content="Sức Khỏe &amp; Làm Đẹp" />
+<meta property="og:updated_time" content="2021-11-13T16:34:02+07:00" />
+<meta property="og:image" content="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg" />
+<meta property="og:image:secure_url" content="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:alt" content="Son dưỡng Dior" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2021-04-09T15:24:14+07:00" />
+<meta property="article:modified_time" content="2021-11-13T16:34:02+07:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng" />
+<meta name="twitter:description" content="Các dòng sản phẩm son dưỡng môi của Dior được đánh giá cao về khả năng làm mềm và bảo vệ môi, đặc biệt là trong thời tiết mùa lạnh. Vậy để tìm  hiểu chi tiết" />
+<meta name="twitter:site" content="@phongreviews" />
+<meta name="twitter:creator" content="@phongreviews" />
+<meta name="twitter:image" content="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Le Huong" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="17 minutes" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://phongreviews.com/#person","name":"Phong Reviews","logo":{"@type":"ImageObject","@id":"https://phongreviews.com/#logo","url":"https://phongreviews.com/wp-content/uploads/2020/11/logo-phongreviews.jpg","caption":"Phong Reviews","inLanguage":"vi","width":"268","height":"40"},"image":{"@type":"ImageObject","@id":"https://phongreviews.com/#logo","url":"https://phongreviews.com/wp-content/uploads/2020/11/logo-phongreviews.jpg","caption":"Phong Reviews","inLanguage":"vi","width":"268","height":"40"}},{"@type":"WebSite","@id":"https://phongreviews.com/#website","url":"https://phongreviews.com","name":"Phong Reviews","publisher":{"@id":"https://phongreviews.com/#person"},"inLanguage":"vi"},{"@type":"ImageObject","@id":"https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg","url":"https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg","width":"1200","height":"800","caption":"Son d\u01b0\u1ee1ng Dior","inLanguage":"vi"},{"@type":"Person","@id":"https://phongreviews.com/son-duong-dior/#author","name":"Le Huong","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/db2e6462b259e2507063aa4d37c6031f?s=96&amp;r=g","url":"https://secure.gravatar.com/avatar/db2e6462b259e2507063aa4d37c6031f?s=96&amp;r=g","caption":"Le Huong","inLanguage":"vi"}},{"@type":"WebPage","@id":"https://phongreviews.com/son-duong-dior/#webpage","url":"https://phongreviews.com/son-duong-dior/","name":"Top 8 Son d\u01b0\u1ee1ng Dior n\u00e0o c\u00f3 m\u00e0u \u0111\u1eb9p nh\u1ea5t \u0111\u01b0\u1ee3c \u01b0a chu\u1ed9ng","datePublished":"2021-04-09T15:24:14+07:00","dateModified":"2021-11-13T16:34:02+07:00","author":{"@id":"https://phongreviews.com/son-duong-dior/#author"},"isPartOf":{"@id":"https://phongreviews.com/#website"},"primaryImageOfPage":{"@id":"https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg"},"inLanguage":"vi"},{"@type":"BlogPosting","headline":"Top 8 Son d\u01b0\u1ee1ng Dior n\u00e0o c\u00f3 m\u00e0u \u0111\u1eb9p nh\u1ea5t \u0111\u01b0\u1ee3c \u01b0a chu\u1ed9ng","datePublished":"2021-04-09T15:24:14+07:00","dateModified":"2021-11-13T16:34:02+07:00","author":{"@id":"https://phongreviews.com/son-duong-dior/#author"},"publisher":{"@id":"https://phongreviews.com/#person"},"description":"C\u00e1c d\u00f2ng s\u1ea3n ph\u1ea9m son d\u01b0\u1ee1ng m\u00f4i c\u1ee7a Dior \u0111\u01b0\u1ee3c \u0111\u00e1nh gi\u00e1 cao v\u1ec1 kh\u1ea3 n\u0103ng l\u00e0m m\u1ec1m v\u00e0 b\u1ea3o v\u1ec7 m\u00f4i, \u0111\u1eb7c bi\u1ec7t l\u00e0 trong th\u1eddi ti\u1ebft m\u00f9a l\u1ea1nh. V\u1eady \u0111\u1ec3 t\u00ecm\u00a0 hi\u1ec3u chi ti\u1ebft h\u01a1n v\u1ec1 d\u00f2ng s\u1ea3n ph\u1ea9m n\u00e0y, m\u1eddi b\u1ea1n tham kh\u1ea3o b\u00e0i vi\u1ebft d\u01b0\u1edbi \u0111\u00e2y c\u0169ng nh\u01b0 tham kh\u1ea3o top 8 son d\u01b0\u1ee1ng Dior v\u1edbi m\u00e0u \u0111\u1eb9p nh\u1ea5t v\u00e0 \u0111\u01b0\u1ee3c \u01b0a chu\u1ed9ng nh\u1ea5t hi\u1ec7n nay nh\u00e9.","name":"Top 8 Son d\u01b0\u1ee1ng Dior n\u00e0o c\u00f3 m\u00e0u \u0111\u1eb9p nh\u1ea5t \u0111\u01b0\u1ee3c \u01b0a chu\u1ed9ng","@id":"https://phongreviews.com/son-duong-dior/#richSnippet","isPartOf":{"@id":"https://phongreviews.com/son-duong-dior/#webpage"},"image":{"@id":"https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg"},"inLanguage":"vi","mainEntityOfPage":{"@id":"https://phongreviews.com/son-duong-dior/#webpage"}}]}</script>
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Phong Reviews &raquo;" href="https://phongreviews.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Phong Reviews &raquo;" href="https://phongreviews.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Phong Reviews &raquo; Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng Dòng phản hồi" href="https://phongreviews.com/son-duong-dior/feed/" />
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/phongreviews.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.3"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" id="phong-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://phongreviews.com/wp-includes/css/dist/block-library/style.min.css?ver=5.9.3' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--main: var(--rehub-main-color);--wp--preset--color--secondary: var(--rehub-sec-color);--wp--preset--color--buttonmain: var(--rehub-main-btn-bg);--wp--preset--color--cyan-grey: #abb8c3;--wp--preset--color--orange-light: #fcb900;--wp--preset--color--red: #cf2e2e;--wp--preset--color--red-bright: #f04057;--wp--preset--color--vivid-green: #00d084;--wp--preset--color--orange: #ff6900;--wp--preset--color--blue: #0693e3;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--system-font: Roboto,"Helvetica Neue",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,sans-serif;--wp--preset--font-family--rh-nav-font: var(--rehub-nav-font,Roboto,"Helvetica Neue",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,sans-serif);--wp--preset--font-family--rh-head-font: var(--rehub-head-font,Roboto,"Helvetica Neue",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,sans-serif);--wp--preset--font-family--rh-btn-font: var(--rehub-btn-font,Roboto,"Helvetica Neue",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,sans-serif);--wp--preset--font-family--rh-body-font: var(--rehub-body-font,Roboto,"Helvetica Neue",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,sans-serif);}body { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }h1{font-size: 29px;line-height: 34px;margin-top: 10px;margin-bottom: 31px;}h2{font-size: 25px;line-height: 31px;margin-top: 10px;margin-bottom: 31px;}h3{font-size: 20px;line-height: 28px;margin-top: 10px;margin-bottom: 25px;}h4{font-size: 18px;line-height: 24px;margin-top: 10px;margin-bottom: 18px;}h5{font-size: 16px;line-height: 20px;margin-top: 10px;margin-bottom: 15px;}h6{font-size: 14px;line-height: 20px;margin-top: 0px;margin-bottom: 10px;}a{color: var(--rehub-link-color, violet);}.wp-block-post-title{margin-top: 4px;margin-right: 0;margin-bottom: 15px;margin-left: 0;}.wp-block-image{margin-top: 0px;margin-bottom: 31px;}.wp-block-media-text{margin-top: 0px;margin-bottom: 31px;}.wp-block-post-content{font-size: 16px;line-height: 28px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-main-color{color: var(--wp--preset--color--main) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-buttonmain-color{color: var(--wp--preset--color--buttonmain) !important;}.has-cyan-grey-color{color: var(--wp--preset--color--cyan-grey) !important;}.has-orange-light-color{color: var(--wp--preset--color--orange-light) !important;}.has-red-color{color: var(--wp--preset--color--red) !important;}.has-red-bright-color{color: var(--wp--preset--color--red-bright) !important;}.has-vivid-green-color{color: var(--wp--preset--color--vivid-green) !important;}.has-orange-color{color: var(--wp--preset--color--orange) !important;}.has-blue-color{color: var(--wp--preset--color--blue) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-main-background-color{background-color: var(--wp--preset--color--main) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-buttonmain-background-color{background-color: var(--wp--preset--color--buttonmain) !important;}.has-cyan-grey-background-color{background-color: var(--wp--preset--color--cyan-grey) !important;}.has-orange-light-background-color{background-color: var(--wp--preset--color--orange-light) !important;}.has-red-background-color{background-color: var(--wp--preset--color--red) !important;}.has-red-bright-background-color{background-color: var(--wp--preset--color--red-bright) !important;}.has-vivid-green-background-color{background-color: var(--wp--preset--color--vivid-green) !important;}.has-orange-background-color{background-color: var(--wp--preset--color--orange) !important;}.has-blue-background-color{background-color: var(--wp--preset--color--blue) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-main-border-color{border-color: var(--wp--preset--color--main) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-buttonmain-border-color{border-color: var(--wp--preset--color--buttonmain) !important;}.has-cyan-grey-border-color{border-color: var(--wp--preset--color--cyan-grey) !important;}.has-orange-light-border-color{border-color: var(--wp--preset--color--orange-light) !important;}.has-red-border-color{border-color: var(--wp--preset--color--red) !important;}.has-red-bright-border-color{border-color: var(--wp--preset--color--red-bright) !important;}.has-vivid-green-border-color{border-color: var(--wp--preset--color--vivid-green) !important;}.has-orange-border-color{border-color: var(--wp--preset--color--orange) !important;}.has-blue-border-color{border-color: var(--wp--preset--color--blue) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-rh-nav-font-font-family{font-family: var(--wp--preset--font-family--rh-nav-font) !important;}.has-rh-head-font-font-family{font-family: var(--wp--preset--font-family--rh-head-font) !important;}.has-rh-btn-font-font-family{font-family: var(--wp--preset--font-family--rh-btn-font) !important;}.has-rh-body-font-font-family{font-family: var(--wp--preset--font-family--rh-body-font) !important;}
+</style>
+<link rel='stylesheet' id='kk-star-ratings-css' href='https://phongreviews.com/wp-content/plugins/kk-star-ratings/src/core/public/css/kk-star-ratings.min.css?ver=5.2.10' type='text/css' media='all' />
+<link rel='stylesheet' id='hapo-coupon-css' href='https://phongreviews.com/wp-content/plugins/hapo-coupon-manage/assets/css/front.css?ver=1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-pgwmodal-css' href='https://phongreviews.com/wp-content/plugins/hapo-coupon-manage/assets/css/pgwmodal.min.css?ver=1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='eggrehub-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/css/eggrehub.css?ver=17.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='rhstyle-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/style.css?ver=17.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='rehubicons-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/iconstyle.css?ver=17.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='rhajaxsearch-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/css/ajaxsearch.css?ver=17.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='rhsingle-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/css/single.css?ver=1.1' type='text/css' media='all' />
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" id='affegg-price-alert-js-extra'>
+/* <![CDATA[ */
+var affeggPriceAlert = {"ajaxurl":"https:\/\/phongreviews.com\/wp-admin\/admin-ajax.php","nonce":"4da7dab95a"};
+/* ]]> */
+</script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/plugins/affiliate-egg/res/js/price_alert.js?ver=10.3.6' id='affegg-price-alert-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/plugins/hapo-coupon-manage/assets/js/moment.min.js?ver=1.17' id='hapo-moment-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/plugins/hapo-coupon-manage/assets/js/pgwmodal.min.js?ver=1.17' id='jquery-pgwmodal-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" id='hapo-coupon-js-extra'>
+/* <![CDATA[ */
+var hapovars = {"currentTime":"1652762234"};
+/* ]]> */
+</script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/plugins/hapo-coupon-manage/assets/js/front.js?ver=1.17' id='hapo-coupon-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" id='rehub-postview-js-extra'>
+/* <![CDATA[ */
+var postviewvar = {"rhpost_ajax_url":"https:\/\/phongreviews.com\/wp-content\/plugins\/rehub-framework\/includes\/rehub_ajax.php","post_id":"10624"};
+/* ]]> */
+</script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/plugins/rehub-framework/assets/js/postviews.js?ver=5.9.3' id='rehub-postview-js'></script>
+<link rel="https://api.w.org/" href="https://phongreviews.com/wp-json/" /><link rel="alternate" type="application/json" href="https://phongreviews.com/wp-json/wp/v2/posts/10624" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://phongreviews.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://phongreviews.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.9.3" />
+<link rel='shortlink' href='https://phongreviews.com/?p=10624' />
+<link rel="alternate" type="application/json+oembed" href="https://phongreviews.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://phongreviews.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F&#038;format=xml" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org/",
+    "@type": "CreativeWorkSeries",
+    "name": "Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "ratingCount": "2"
+    }
+}</script><meta name='dmca-site-verification' content='K2JlSUx5OFFLSk9aN0w2dVVVb2tFRjhQK1RrWWdCTGU1dnJzaDFCSS9Ecz01' />
+<meta name="google-site-verification" content="cGla2c1BffKg5o3rBEmHWGQEZDHMmW-PUKipsHp2x14" />
+
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWSNWB5');</script>
+
+
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://proof.hapodigital.com/pixel/hvw6zlhncfrtp4cfx6snmsvge7ykk2ma"></script>
+
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319429228267042" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [{
+"@type": "Question",
+"name": "Son dưỡng Dior có tốt không?",
+"acceptedAnswer": { "@type":
+"Answer",
+"text": "Các dòng sản phẩm của Dior nói chung và son dưỡng Dior nói riêng đều được đánh giá rất cao về chất lượng. Sản phẩm này rất đa dạng về mẫu mã và màu sắc, mang tới khả năng làm mềm và bảo vệ môi hiệu quả."
+}
+}, {
+"@type": "Question",
+"name": "Top 8 màu Son dưỡng Dior đẹp nhất được ưa chuộng hiện nay?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Để người dùng dễ dàng hơn trong việc lựa chọn son dưỡng Dior cho mình, phần tiếp theo của bài viết sẽ giới thiệu tới bạn top 8 dòng son dưỡng môi của Dior với màu đẹp nhất và được ưa chuộng nhất hiện nay. Vậy hãy cùng tìm hiểu chúng trước khi lựa chọn cho mình dòng sản phẩm với màu ưng ý nhất nhé."
+}
+}]
+}
+</script>
+<link rel="preload" href="https://phongreviews.com/wp-content/themes/rehub-theme/fonts/rhicons.woff2?3oibrk" as="font" type="font/woff2" crossorigin="crossorigin"><style type="text/css"> @media (min-width:1025px){header .logo-section{padding:30px 0;}}nav.top_menu > ul > li > a{font-weight:normal;}nav.top_menu > ul > li > a{color:#ffffff !important;}nav.top_menu > ul > li > a:hover{box-shadow:none;}.responsive_nav_wrap .user-ava-intop:after,.dl-menuwrapper button i,.responsive_nav_wrap .rh-header-icon{color:#ffffff !important;}.dl-menuwrapper button svg line{stroke:#ffffff !important;}.responsive_nav_wrap{background:none repeat scroll 0 0 #ffffff!important;box-shadow:none;}.main-nav{border-bottom:none;border-top:none;}.dl-menuwrapper .dl-menu{margin:0 !important}#main_header,.is-sticky .logo_section_wrap,.sticky-active.logo_section_wrap{background-color:#007eff !important}.main-nav.white_style{border-top:none}nav.top_menu > ul:not(.off-canvas) > li > a:after{top:auto;bottom:0}.header-top{border:none;}.left-sidebar-archive .main-side{float:right;}.left-sidebar-archive .sidebar{float:left}.footer-bottom{background-color:#181818 !important}.footer-bottom .footer_widget{border:none !important}.footer-bottom{background-image:url("https://remarket.wpsoul.com/wp-content/uploads/2017/08/footerbg.jpg");background-position:center bottom;background-repeat:no-repeat} .widget .title:after{border-bottom:2px solid #e53926;}.rehub-main-color-border,nav.top_menu > ul > li.vertical-menu.border-main-color .sub-menu,.rh-main-bg-hover:hover,.wp-block-quote,ul.def_btn_link_tabs li.active a,.wp-block-pullquote{border-color:#e53926;}.wpsm_promobox.rehub_promobox{border-left-color:#e53926!important;}.color_link{color:#e53926 !important;}.featured_slider:hover .score,.top_chart_controls .controls:hover,article.post .wpsm_toplist_heading:before{border-color:#e53926;}.btn_more:hover,.tw-pagination .current{border:1px solid #e53926;color:#fff}.rehub_woo_review .rehub_woo_tabs_menu li.current{border-top:3px solid #e53926;}.gallery-pics .gp-overlay{box-shadow:0 0 0 4px #e53926 inset;}.post .rehub_woo_tabs_menu li.current,.woocommerce div.product .woocommerce-tabs ul.tabs li.active{border-top:2px solid #e53926;}.rething_item a.cat{border-bottom-color:#e53926}nav.top_menu ul li ul.sub-menu{border-bottom:2px solid #e53926;}.widget.deal_daywoo,.elementor-widget-wpsm_woofeatured .deal_daywoo{border:3px solid #e53926;padding:20px;background:#fff;}.deal_daywoo .wpsm-bar-bar{background-color:#e53926 !important} #buddypress div.item-list-tabs ul li.selected a span,#buddypress div.item-list-tabs ul li.current a span,#buddypress div.item-list-tabs ul li a span,.user-profile-div .user-menu-tab > li.active > a,.user-profile-div .user-menu-tab > li.active > a:focus,.user-profile-div .user-menu-tab > li.active > a:hover,.news_in_thumb:hover a.rh-label-string,.news_out_thumb:hover a.rh-label-string,.col-feat-grid:hover a.rh-label-string,.carousel-style-deal .re_carousel .controls,.re_carousel .controls:hover,.openedprevnext .postNavigation .postnavprev,.postNavigation .postnavprev:hover,.top_chart_pagination a.selected,.flex-control-paging li a.flex-active,.flex-control-paging li a:hover,.btn_more:hover,body .tabs-menu li:hover,body .tabs-menu li.current,.featured_slider:hover .score,#bbp_user_edit_submit,.bbp-topic-pagination a,.bbp-topic-pagination a,.custom-checkbox label.checked:after,.slider_post .caption,ul.postpagination li.active a,ul.postpagination li:hover a,ul.postpagination li a:focus,.top_theme h5 strong,.re_carousel .text:after,#topcontrol:hover,.main_slider .flex-overlay:hover a.read-more,.rehub_chimp #mc_embed_signup input#mc-embedded-subscribe,#rank_1.rank_count,#toplistmenu > ul li:before,.rehub_chimp:before,.wpsm-members > strong:first-child,.r_catbox_btn,.wpcf7 .wpcf7-submit,.wpsm_pretty_hover li:hover,.wpsm_pretty_hover li.current,.rehub-main-color-bg,.togglegreedybtn:after,.rh-bg-hover-color:hover a.rh-label-string,.rh-main-bg-hover:hover,.rh_wrapper_video_playlist .rh_video_currently_playing,.rh_wrapper_video_playlist .rh_video_currently_playing.rh_click_video:hover,.rtmedia-list-item .rtmedia-album-media-count,.tw-pagination .current,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:hover,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a:hover,#ywqa-submit-question,.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.rh-hov-bor-line > a:after,nav.top_menu > ul:not(.off-canvas) > li > a:after,.rh-border-line:after,.wpsm-table.wpsm-table-main-color table tr th,.rh-hov-bg-main-slide:before,.rh-hov-bg-main-slidecol .col_item:before{background:#e53926;}@media (max-width:767px){.postNavigation .postnavprev{background:#e53926;}}.rh-main-bg-hover:hover,.rh-main-bg-hover:hover .whitehovered,.user-profile-div .user-menu-tab > li.active > a{color:#fff !important} a,.carousel-style-deal .deal-item .priced_block .price_count ins,nav.top_menu ul li.menu-item-has-children ul li.menu-item-has-children > a:before,.top_chart_controls .controls:hover,.flexslider .fa-pulse,.footer-bottom .widget .f_menu li a:hover,.comment_form h3 a,.bbp-body li.bbp-forum-info > a:hover,.bbp-body li.bbp-topic-title > a:hover,#subscription-toggle a:before,#favorite-toggle a:before,.aff_offer_links .aff_name a,.rh-deal-price,.commentlist .comment-content small a,.related_articles .title_cat_related a,article em.emph,.campare_table table.one td strong.red,.sidebar .tabs-item .detail p a,.footer-bottom .widget .title span,footer p a,.welcome-frase strong,article.post .wpsm_toplist_heading:before,.post a.color_link,.categoriesbox:hover h3 a:after,.bbp-body li.bbp-forum-info > a,.bbp-body li.bbp-topic-title > a,.widget .title i,.woocommerce-MyAccount-navigation ul li.is-active a,.category-vendormenu li.current a,.deal_daywoo .title,.rehub-main-color,.wpsm_pretty_colored ul li.current a,.wpsm_pretty_colored ul li.current,.rh-heading-hover-color:hover h2 a,.rh-heading-hover-color:hover h3 a,.rh-heading-hover-color:hover h4 a,.rh-heading-hover-color:hover h5 a,.rh-heading-hover-color:hover h3,.rh-heading-hover-color:hover h2,.rh-heading-hover-color:hover h4,.rh-heading-hover-color:hover h5,.rh-heading-hover-color:hover .rh-heading-hover-item a,.rh-heading-icon:before,.widget_layered_nav ul li.chosen a:before,.wp-block-quote.is-style-large p,ul.page-numbers li span.current,ul.page-numbers li a:hover,ul.page-numbers li.active a,.page-link > span:not(.page-link-title),blockquote:not(.wp-block-quote) p,span.re_filtersort_btn:hover,span.active.re_filtersort_btn,.deal_daywoo .price,div.sortingloading:after{color:#e53926;} .page-link > span:not(.page-link-title),.widget.widget_affegg_widget .title,.widget.top_offers .title,.widget.cegg_widget_products .title,header .header_first_style .search form.search-form [type="submit"],header .header_eight_style .search form.search-form [type="submit"],.filter_home_pick span.active,.filter_home_pick span:hover,.filter_product_pick span.active,.filter_product_pick span:hover,.rh_tab_links a.active,.rh_tab_links a:hover,.wcv-navigation ul.menu li.active,.wcv-navigation ul.menu li:hover a,form.search-form [type="submit"],.rehub-sec-color-bg,input#ywqa-submit-question,input#ywqa-send-answer,.woocommerce button.button.alt,.tabsajax span.active.re_filtersort_btn,.wpsm-table.wpsm-table-sec-color table tr th,.rh-slider-arrow,.rh-hov-bg-sec-slide:before,.rh-hov-bg-sec-slidecol .col_item:before{background:#111111 !important;color:#fff !important;outline:0}.widget.widget_affegg_widget .title:after,.widget.top_offers .title:after,.widget.cegg_widget_products .title:after{border-top-color:#111111 !important;}.page-link > span:not(.page-link-title){border:1px solid #111111;}.page-link > span:not(.page-link-title),.header_first_style .search form.search-form [type="submit"] i{color:#fff !important;}.rh_tab_links a.active,.rh_tab_links a:hover,.rehub-sec-color-border,nav.top_menu > ul > li.vertical-menu.border-sec-color > .sub-menu,body .rh-slider-thumbs-item--active{border-color:#111111}.rh_wrapper_video_playlist .rh_video_currently_playing,.rh_wrapper_video_playlist .rh_video_currently_playing.rh_click_video:hover{background-color:#111111;box-shadow:1200px 0 0 #111111 inset;}.rehub-sec-color{color:#111111} .price_count,.rehub_offer_coupon,#buddypress .dir-search input[type=text],.gmw-form-wrapper input[type=text],.gmw-form-wrapper select,.rh_post_layout_big_offer .priced_block .btn_offer_block,#buddypress a.button,.btn_more,#main_header .wpsm-button,#rh-header-cover-image .wpsm-button,#wcvendor_image_bg .wpsm-button,.rate-bar-bar,.rate-bar,.rehub-main-smooth,.re_filter_instore span.re_filtersort_btn:hover,.re_filter_instore span.active.re_filtersort_btn,.head_search .search-form,.head_search form.search-form input[type="text"],form.search-form input[type="text"]{border-radius:100px}.news .priced_block .price_count,.blog_string .priced_block .price_count,.main_slider .price_count{margin-right:5px}.right_aff .priced_block .btn_offer_block,.right_aff .priced_block .price_count{border-radius:0 !important}form.search-form.product-search-form input[type="text"]{border-radius:100px 0 0 100px;}form.search-form [type="submit"]{border-radius:0 100px 100px 0;}.rtl form.search-form.product-search-form input[type="text"]{border-radius:0 100px 100px 0;}.rtl form.search-form [type="submit"]{border-radius:100px 0 0 100px;}.woocommerce .products.grid_woo .product,.rh_offer_list .offer_thumb .deal_img_wrap,.rehub_chimp #mc_embed_signup input.email,#mc_embed_signup input#mc-embedded-subscribe,.grid_onsale,.def_btn,input[type="submit"],input[type="button"],input[type="reset"],.wpsm-button,#buddypress div.item-list-tabs ul li a,#buddypress .standard-form input[type=text],#buddypress .standard-form textarea,.blacklabelprice{border-radius:5px}.news-community,.review-top .overall-score,.rate_bar_wrap,.rh_offer_list,.woo-tax-logo,#buddypress form#whats-new-form,#buddypress div#invite-list,#buddypress #send-reply div.message-box,.rehub-sec-smooth,#wcfm-main-contentainer #wcfm-content,.wcfm_welcomebox_header{border-radius:8px}.review-top .overall-score span.overall-text{border-radius:0 0 8px 8px}.coupon_btn:before{display:none;}#rhSplashSearch form.search-form input[type="text"],#rhSplashSearch form.search-form [type="submit"]{border-radius:0 !important} .woocommerce .woo-button-area .masked_coupon,.woocommerce a.woo_loop_btn,.woocommerce .button.checkout,.woocommerce input.button.alt,.woocommerce a.add_to_cart_button:not(.flat-woo-btn),.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn),.woocommerce .single_add_to_cart_button,.woocommerce div.product form.cart .button,.woocommerce .checkout-button.button,.priced_block .btn_offer_block,.priced_block .button,.rh-deal-compact-btn,input.mdf_button,#buddypress input[type="submit"],#buddypress input[type="button"],#buddypress input[type="reset"],#buddypress button.submit,.wpsm-button.rehub_main_btn,.wcv-grid a.button,input.gmw-submit,#ws-plugin--s2member-profile-submit,#rtmedia_create_new_album,input[type="submit"].dokan-btn-theme,a.dokan-btn-theme,.dokan-btn-theme,#wcfm_membership_container a.wcfm_submit_button,.woocommerce button.button,.rehub-main-btn-bg,.woocommerce #payment #place_order,.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link{background:none #007eff !important;color:#ffffff !important;fill:#ffffff !important;border:none !important;text-decoration:none !important;outline:0;box-shadow:-1px 6px 19px rgba(0,126,255,0.25) !important;border-radius:100px !important;}.rehub-main-btn-bg > a{color:#ffffff !important;}.woocommerce a.woo_loop_btn:hover,.woocommerce .button.checkout:hover,.woocommerce input.button.alt:hover,.woocommerce a.add_to_cart_button:not(.flat-woo-btn):hover,.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn):hover,.woocommerce a.single_add_to_cart_button:hover,.woocommerce-page a.single_add_to_cart_button:hover,.woocommerce div.product form.cart .button:hover,.woocommerce-page div.product form.cart .button:hover,.woocommerce .checkout-button.button:hover,.priced_block .btn_offer_block:hover,.wpsm-button.rehub_main_btn:hover,#buddypress input[type="submit"]:hover,#buddypress input[type="button"]:hover,#buddypress input[type="reset"]:hover,#buddypress button.submit:hover,.small_post .btn:hover,.ap-pro-form-field-wrapper input[type="submit"]:hover,.wcv-grid a.button:hover,#ws-plugin--s2member-profile-submit:hover,.rething_button .btn_more:hover,#wcfm_membership_container a.wcfm_submit_button:hover,.woocommerce #payment #place_order:hover,.woocommerce button.button:hover,.rehub-main-btn-bg:hover,.rehub-main-btn-bg:hover > a,.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover{background:none #007eff !important;color:#ffffff !important;border-color:transparent;box-shadow:-1px 6px 13px rgba(0,126,255,0.35) !important;}.rehub_offer_coupon:hover{border:1px dashed #007eff;}.rehub_offer_coupon:hover i.far,.rehub_offer_coupon:hover i.fal,.rehub_offer_coupon:hover i.fas{color:#007eff}.re_thing_btn .rehub_offer_coupon.not_masked_coupon:hover{color:#007eff !important}.woocommerce a.woo_loop_btn:active,.woocommerce .button.checkout:active,.woocommerce .button.alt:active,.woocommerce a.add_to_cart_button:not(.flat-woo-btn):active,.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn):active,.woocommerce a.single_add_to_cart_button:active,.woocommerce-page a.single_add_to_cart_button:active,.woocommerce div.product form.cart .button:active,.woocommerce-page div.product form.cart .button:active,.woocommerce .checkout-button.button:active,.wpsm-button.rehub_main_btn:active,#buddypress input[type="submit"]:active,#buddypress input[type="button"]:active,#buddypress input[type="reset"]:active,#buddypress button.submit:active,.ap-pro-form-field-wrapper input[type="submit"]:active,.wcv-grid a.button:active,#ws-plugin--s2member-profile-submit:active,.woocommerce #payment #place_order:active,input[type="submit"].dokan-btn-theme:active,a.dokan-btn-theme:active,.dokan-btn-theme:active,.woocommerce button.button:active,.rehub-main-btn-bg:active,.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:active{background:none #007eff !important;box-shadow:0 1px 0 #999 !important;top:2px;color:#ffffff !important;}.rehub_btn_color,.rehub_chimp_flat #mc_embed_signup input#mc-embedded-subscribe{background-color:#007eff;border:1px solid #007eff;color:#ffffff;text-shadow:none}.rehub_btn_color:hover{color:#ffffff;background-color:#007eff;border:1px solid #007eff;}.rething_button .btn_more{border:1px solid #007eff;color:#007eff;}.rething_button .priced_block.block_btnblock .price_count{color:#007eff;font-weight:normal;}.widget_merchant_list .buttons_col{background-color:#007eff !important;}.widget_merchant_list .buttons_col a{color:#ffffff !important;}.rehub-svg-btn-fill svg{fill:#007eff;}.rehub-svg-btn-stroke svg{stroke:#007eff;}@media (max-width:767px){#float-panel-woo-area{border-top:1px solid #007eff}}:root{--rehub-main-color:#e53926;--rehub-sec-color:#111111;--rehub-main-btn-bg:#007eff;}</style><link rel="icon" href="https://phongreviews.com/wp-content/uploads/2021/04/cropped-Phongreviews-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://phongreviews.com/wp-content/uploads/2021/04/cropped-Phongreviews-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://phongreviews.com/wp-content/uploads/2021/04/cropped-Phongreviews-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://phongreviews.com/wp-content/uploads/2021/04/cropped-Phongreviews-favicon-270x270.png" />
+<style type="text/css" id="wp-custom-css">
+			blockquote:not(.wp-block-quote) p {
+    color: #404040!important;
+	    font-size: 18px!important;
+	line-height: 1.4;
+}
+blockquote:not(.wp-block-quote) p {
+    padding: 0 15px 0 10px!important;
+}
+blockquote p {
+    font-style: normal;
+}
+blockquote {
+    padding: 3px 0 3px!important;
+    margin: 20px 0 20px 15px!important;
+border-left: 4px solid #7000f4;
+ color: #232323;
+}
+h3 {
+color: #7000f4
+}
+.post {
+	line-height:1.7;
+}
+.priced_block {
+   text-align:center;
+}
+.style_1.hapo_coupon_item {
+    background: linear-gradient(
+266deg
+, rgb(111 37 146 / 0%) 0%, rgb(30 3 255 / 24%) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8a00",endColorstr="#ff8a00",GradientType=1);
+}
+
+element.style {
+}
+@media (max-width: 767px)
+#rh_social_panel_footer.scrollvisible {
+    bottom: 0;
+}
+#rh_social_panel_footer {
+display: none;
+}
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+		</style>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-10624 single-format-standard wp-custom-logo wp-embed-responsive elementor-default elementor-kit-2733 aa-prefix-phong-">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+<div class="rh-outer-wrap">
+<div id="top_ankor"></div>
+
+<header id="main_header" class="dark_style width-100p position-relative">
+<div class="header_wrap">
+ 
+<div class="header_five_style logo_section_wrap header_one_row">
+<div class="rh-container tabletblockdisplay mb0 disabletabletpadding">
+<div class="logo-section rh-flex-center-align tabletblockdisplay disabletabletpadding mb0">
+<div class="logo hideontablet">
+<a href="https://phongreviews.com" class="logo_image"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Phong Reviews" height="" width="" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/logo-phongreview.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/2021/04/logo-phongreview.png" alt="Phong Reviews" height="" width="" /></noscript></a>
+</div>
+
+<div class="main-nav mob-logo-enabled rh-flex-right-align  white_style">
+<nav class="top_menu"><ul id="menu-luxe-menu-complicated" class="menu"><li id="menu-item-2752" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/cong-nghe/">Công Nghệ</a></li>
+<li id="menu-item-2751" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent"><a href="https://phongreviews.com/chuyen-muc/suc-khoe/">Sức Khỏe &amp; Làm Đẹp</a></li>
+<li id="menu-item-2749" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/do-gia-dung/">Gia dụng</a></li>
+<li id="menu-item-2750" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/nha-cua-doi-song/">Đời sống</a></li>
+<li id="menu-item-2753" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/the-thao-da-ngoai/">Thể thao</a></li>
+<li id="menu-item-2754" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/me-be/">Mẹ &amp; Bé</a></li>
+<li id="menu-item-24039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">MÃ GIẢM GIÁ</a>
+<ul class="sub-menu">
+<li id="menu-item-24042" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://phongreviews.com/ma-giam-gia/shopee/">Mã Giảm Giá Shopee</a></li>
+<li id="menu-item-24040" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://phongreviews.com/ma-giam-gia/lazada/">Mã Giảm Giá Lazada</a></li>
+<li id="menu-item-24043" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://phongreviews.com/ma-giam-gia/tiki/">Mã Giảm Giá Tiki</a></li>
+<li id="menu-item-24044" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://phongreviews.com/ma-giam-gia/sendo/">Mã Giảm Giá Sendo</a></li>
+</ul>
+</li>
+<li id="menu-item-2748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children"><a href="https://phongreviews.com/chuyen-muc/kinh-nghiem/">Kinh nghiệm</a>
+<ul class="sub-menu">
+<li id="menu-item-62988" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/am-thuc/">Ẩm thực</a></li>
+<li id="menu-item-62989" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/du-lich/">Du lịch</a></li>
+<li id="menu-item-49998" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children"><a href="https://phongreviews.com/chuyen-muc/giai-tri/">Giải trí</a>
+<ul class="sub-menu">
+<li id="menu-item-62991" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/giai-tri/sach-va-truyen/">Sách và Truyện</a></li>
+<li id="menu-item-62990" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://phongreviews.com/chuyen-muc/giai-tri/review-phim/">Review Phim</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav> <div class="responsive_nav_wrap rh_mobile_menu">
+<div id="dl-menu" class="dl-menuwrapper rh-flex-center-align">
+<button id="dl-trigger" class="dl-trigger" aria-label="Menu">
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<g>
+<line stroke-linecap="round" id="rhlinemenu_1" y2="7" x2="29" y1="7" x1="3" />
+<line stroke-linecap="round" id="rhlinemenu_2" y2="16" x2="18" y1="16" x1="3" />
+<line stroke-linecap="round" id="rhlinemenu_3" y2="25" x2="26" y1="25" x1="3" />
+</g>
+</svg>
+</button>
+<div id="mobile-menu-icons" class="rh-flex-center-align rh-flex-right-align">
+<button class='icon-search-onclick' aria-label='Search'><i class='rhicon rhi-search'></i></button>
+</div>
+</div>
+</div>
+</div>
+<div class="header-actions-logo">
+<div class="rh-flex-center-align">
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</header>
+
+<div class="rh-container">
+<div class="rh-content-wrap clearfix">
+
+<div class="main-side single clearfix">
+<div class="rh-post-wrapper">
+<article class="post-inner post  post-10624 type-post status-publish format-standard has-post-thumbnail hentry category-suc-khoe" id="post-10624">
+
+<div class="rh_post_layout_compact rh_post_layout_compact_dir">
+<div class="breadcrumb font90 rh_opacity_7"><a href="https://phongreviews.com/">Home</a> &raquo; <span><a href="https://phongreviews.com/chuyen-muc/suc-khoe/">Sức Khỏe &amp; Làm Đẹp</a></span> &raquo; <span class="current">Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng</span></div>
+<div class="title_single_area mb15 rh-flex-eq-height mobileblockdisplay">
+<div class="width-125 mb20 pr20 featured_single_left disablemobilepadding mobilemargincenter">
+<figure>
+<div class="favorrightside wishonimage"><div class="heart_thumb_wrap text-center"><span class="flowhidden cell_wishlist"><span class="heartplus" data-post_id="10624" data-informer="0"></span></span><span id="wishcount10624" class="thumbscount">0</span> </div></div>
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" data-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg" alt="Son dưỡng Dior" data-skip-lazy="" class="lazyload " width="225" height="150">
+
+</figure>
+</div>
+<div class="rh-flex-grow1 single_top_main mr20">
+<h1 class="">Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng</h1>
+<div class="meta post-meta mb15 flowhidden">
+<span class="postview_meta">7905 </span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/son-duong-dior/#respond" class="comm_meta">0</a></span>
+<span class="more-from-store-a ml5 mr5"></span>
+</div>
+<div class="top_share">
+<div class="post_share">
+<div class="social_icon  row_social_inpost"><span data-href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F" class="fb share-link-image" data-service="facebook"><i class="rhicon rhi-facebook"></i></span><span data-href="https://twitter.com/share?url=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F&text=Top+8+Son+d%C6%B0%E1%BB%A1ng+Dior+n%C3%A0o+c%C3%B3+m%C3%A0u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+%C4%91%C6%B0%E1%BB%A3c+%C6%B0a+chu%E1%BB%99ng" class="tw share-link-image" data-service="twitter"><i class="rhicon rhi-twitter"></i></span><span data-href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F&amp;media=https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg&amp;description=Top+8+Son+d%C6%B0%E1%BB%A1ng+Dior+n%C3%A0o+c%C3%B3+m%C3%A0u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+%C4%91%C6%B0%E1%BB%A3c+%C6%B0a+chu%E1%BB%99ng" class="pn share-link-image" data-service="pinterest"><i class="rhicon rhi-pinterest-p"></i></span><span data-href="mailto:?subject=Top+8+Son+d%C6%B0%E1%BB%A1ng+Dior+n%C3%A0o+c%C3%B3+m%C3%A0u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+%C4%91%C6%B0%E1%BB%A3c+%C6%B0a+chu%E1%BB%99ng&body=Check out: https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F - Phong+Reviews" class="in share-link-image" data-service="email"><i class="rhicon rhi-envelope"></i></span></div> </div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="single_top_corner text-right-align">
+</div>
+</div>
+</div>
+<p>Các dòng sản phẩm son dưỡng môi của Dior được đánh giá cao về khả năng làm mềm và bảo vệ môi, đặc biệt là trong thời tiết mùa lạnh. Vậy để tìm  hiểu chi tiết hơn về dòng sản phẩm này, mời bạn tham khảo bài viết dưới đây cũng như tham khảo top 8 <strong>son dưỡng Dior</strong> với màu đẹp nhất và được ưa chuộng nhất hiện nay nhé.</p>
+<div class="wpsm-titlebox clearbox wpsm_style_1"><strong class="">Nội dung</strong><div> <div id="toplistmenu"><ul class="autocontents" id="kcmenu" itemscope itemtype="https://phongreviews.com/go/2hbDeIqcL0sp5DLM">
+<li class="top" itemprop="itemListElement" itemscope itemtype="https://phongreviews.com/go/Ezh0gyxf3ArhVRfH"><a href="#gioi-thieu-ve-thuong-hieu-son-duong-dior" itemprop="url">Giới thiệu về thương hiệu son dưỡng Dior</a><meta itemprop="position" content="1" /><meta itemprop="name" content="Giới thiệu về thương hiệu son dưỡng Dior" /></li>
+<li class="top" itemprop="itemListElement" itemscope itemtype="https://phongreviews.com/go/Ezh0gyxf3ArhVRfH"><a href="#son-duong-dior-co-tot-khong" itemprop="url">Son dưỡng Dior có tốt không?</a><meta itemprop="position" content="2" /><meta itemprop="name" content="Son dưỡng Dior có tốt không?" /></li>
+<li class="top" itemprop="itemListElement" itemscope itemtype="https://phongreviews.com/go/Ezh0gyxf3ArhVRfH"><a href="#son-duong-dior-co-may-loai" itemprop="url">Son dưỡng Dior có mấy loại?</a><meta itemprop="position" content="3" /><meta itemprop="name" content="Son dưỡng Dior có mấy loại?" /></li>
+<li class="top" itemprop="itemListElement" itemscope itemtype="https://phongreviews.com/go/Ezh0gyxf3ArhVRfH"><a href="#top-8-mau-son-duong-dior-dep-nhat-duoc-ua-chuong-hien-nay" itemprop="url">Top 8 màu Son dưỡng Dior đẹp nhất được ưa chuộng hiện nay</a><meta itemprop="position" content="4" /><meta itemprop="name" content="Top 8 màu Son dưỡng Dior đẹp nhất được ưa chuộng hiện nay" /></li>
+</ul>
+</div> </div></div>
+<h2 id="gioi-thieu-ve-thuong-hieu-son-duong-dior" class="wpsm_toplist_heading">Giới thiệu về thương hiệu son dưỡng Dior</h2><div class="phong-noi-dung_4" style="margin-top: 10px; margin-bottom: 10px; " id="phong-635960775"><script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319429228267042" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7319429228267042" data-ad-slot="5113384471"></ins>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><div class="phong-noi-dung_3" style="margin-left: auto; margin-right: auto; text-align: center; margin-top: 10px; margin-bottom: 5px; " id="phong-1440578795"><a href="https://ti.ki/8ebfgdsJ/UXKP8KT4"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201115%20806'%3E%3C/svg%3E" alt="tiki-sale" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3.jpg 1115w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-300x217.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-1024x740.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-768x555.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-1536x1110.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-2048x1480.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-208x150.jpg 208w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-100x72.jpg 100w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-484x350.jpg 484w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-788x569.jpg 788w" data-lazy-sizes="(max-width: 1115px) 100vw, 1115px" class="no-lazyload" width="1115" height="806" style="display: inline-block;" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3.jpg" /><noscript><img src="https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3.jpg" alt="tiki-sale"  srcset="https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3.jpg 1115w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-300x217.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-1024x740.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-768x555.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-1536x1110.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-2048x1480.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-208x150.jpg 208w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-100x72.jpg 100w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-484x350.jpg 484w, https://phongreviews.com/wp-content/uploads/2021/06/tiki-sale-3-788x569.jpg 788w" sizes="(max-width: 1115px) 100vw, 1115px" class="no-lazyload" width="1115" height="806"  style="display: inline-block;" /></noscript></a></div>
+<p>Dior có tên gọi đầy đủ là Christian Dior, được thành lập tại Pháp năm 1946. Dòng sản phẩm của thương hiệu này tập trung vào đối tượng khách hàng trung lưu và thượng lưu với nhiều dòng sản phẩm đắt đỏ và chất lượng với quần áo, mỹ phẩm và nước hoa,&#8230;</p>
+<p><img class="aligncenter size-full wp-image-10628" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20348'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="348" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-300x298.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-1024x1018.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-767x763.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-1536x1527.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-2048x2036.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-788x783.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 1" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0.jpg"><noscript><img class="aligncenter size-full wp-image-10628" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0.jpg" alt="Son dưỡng Dior" width="350" height="348" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-300x298.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-1024x1018.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-767x763.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-1536x1527.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-2048x2036.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-0-788x783.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 1"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/t8tSb7JaDLacouXC" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI SHOPEE</a></div></div>
+<p><strong>Son dưỡng Dior</strong> là một trong những dòng sản phẩm nổi tiếng của hãng Dior. Sản phẩm này sẽ giúp đôi môi bạn được tươi tắn, mềm mại, căng mọng và quyến rũ với nhiều màu sắc khác nhau, giúp bạn trở nên tự tin và xinh đẹp.</p>
+<h2 id="son-duong-dior-co-tot-khong" class="wpsm_toplist_heading">Son dưỡng Dior có tốt không?</h2>
+<p>Các dòng sản phẩm của Dior nói chung và <strong>son dưỡng Dior</strong> nói riêng đều được đánh giá rất cao về chất lượng. Sản phẩm này rất đa dạng về mẫu mã và màu sắc, mang tới khả năng làm mềm và bảo vệ môi hiệu quả.</p>
+<p>Không những vậy, sản phẩm này còn có chất lượng rất tốt, giúp đôi môi bạn gái trông quyến rũ hơn, giúp gương mặt bạn sáng và tươi tắn hơn rất nhiều. Bên cạnh đó, sử dụng son dưỡng môi của Dior cũng giúp bạn thể hiện phong cách và cá tính của bản thân mình.</p><div class="phong-noi-dung_5" style="margin-top: 10px; margin-bottom: 10px; " id="phong-1361185394"><script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319429228267042" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7319429228267042" data-ad-slot="5113384471"></ins>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<p><img class="aligncenter size-full wp-image-10629" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20350'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="350" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-788x788.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 2" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2.jpg"><noscript><img class="aligncenter size-full wp-image-10629" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2.jpg" alt="Son dưỡng Dior" width="350" height="350" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-2-788x788.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 2"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/GgfwE1693eDs8j7S" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG CHÍNH HÃNG TẠI TIKI</a></div></div>
+<p>Bên cạnh đó, các dòng son dưỡng của Dior còn có thể được sử dụng để làm phấn mắt, phấn má dạng kem. Hàm lượng dưỡng ẩm có trong các dòng son này rất cao, giúp đôi môi của bạn mềm mại, giảm đôi môi của bạn căng mọng hơn.</p>
+<p>Ngoài ra, bạn cũng có thể sử dụng dòng sản phẩm son dưỡng này để chữa cháy cho bàn tay khô ráp hay cho vùng da mũi bị bong tróc, nứt nẻ trong những ngày thời tiết mùa đông.</p>
+<p>Như vậy với những ưu điểm và công dụng kể trên, có thể thấy rằng son dưỡng môi của Dior là dòng sản phẩm có chất lượng tốt, rất đáng để bạn sở hữu.</p>
+<h2 id="son-duong-dior-co-may-loai" class="wpsm_toplist_heading">Son dưỡng Dior có mấy loại?</h2><div class="phong-noi-dung" style="margin-left: auto; margin-right: auto; text-align: center; margin-top: 10px; margin-bottom: 10px; " id="phong-1539240380"><a href="https://shorten.asia/VuNWymK6"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20576'%3E%3C/svg%3E" alt="Shopee sale 5-5" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0.jpg 800w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-300x216.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-1024x737.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-767x552.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-1536x1106.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-2048x1475.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-208x150.jpg 208w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-100x72.jpg 100w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-486x350.jpg 486w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-788x567.jpg 788w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" class="no-lazyload" width="800" height="576" style="display: inline-block;" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0.jpg" /><noscript><img src="https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0.jpg" alt="Shopee sale 5-5"  srcset="https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0.jpg 800w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-300x216.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-1024x737.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-767x552.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-1536x1106.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-2048x1475.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-208x150.jpg 208w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-100x72.jpg 100w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-486x350.jpg 486w, https://phongreviews.com/wp-content/uploads/2021/06/shopee-sale-5-5-0-788x567.jpg 788w" sizes="(max-width: 800px) 100vw, 800px" class="no-lazyload" width="800" height="576"  style="display: inline-block;" /></noscript></a></div>
+<p>Hiện nay trên thị trường có 3 dòng<strong> son dưỡng Dior</strong>. Mỗi dòng sản phẩm này lại có những bảng màu riêng với thành phần riêng, mang tới cho người dùng những trải nghiệm khác nhau trong quá trình sử dụng. Cụ thể:</p>
+<p><img class="aligncenter size-full wp-image-10630" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20346'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="346" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-300x297.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-1024x1012.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-768x759.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-1536x1518.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-2048x2025.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-788x778.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 3" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33.jpg"><noscript><img class="aligncenter size-full wp-image-10630" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33.jpg" alt="Son dưỡng Dior" width="350" height="346" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-300x297.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-1024x1012.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-768x759.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-1536x1518.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-2048x2025.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-33-788x778.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 3"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/w5tD0MzI2qbdQeWE" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI LAZADA</a></div></div>
+<ul>
+<li aria-level="1"><strong>Son dưỡng Dior Addict Lip Glow:</strong> Ưu điểm của dòng son dưỡng này đó là được trang bị thêm chỉ số chống nắng SPF 10 giúp tăng hiệu quả dưỡng môi và giúp đôi môi của bạn được hồng hào hơn. Sản phẩm này có chất son nhiều dưỡng và mềm với thiết kế vỏ bằng nhựa trong suốt với một đầu son là hình quả cầu.</li>
+<li aria-level="1"><strong>Son dưỡng Dior Lip Maximizer:</strong> Là dòng sản phẩm có độ dưỡng cực kỳ cao. Bên cạnh đó, sản phẩm còn bổ sung thêm cả collagen giúp làm đầy các rãnh môi cùng các Acid Hyaluronic giúp tái cấu trúc lại kết cấu màu  môi, giúp đôi môi của bạn ẩm mướt và căng mọng. Đây là dòng son nước với chất son bóng và mỏng nhẹ, có thể giữ được trên môi chừng 2 giờ đồng hồ.</li>
+<li aria-level="1"><strong>Son dưỡng tẩy tế bào chết Dior Lip Sugar Scrub:</strong> Đây là dòng son dưỡng vừa có thể dưỡng môi vừa có thể tẩy tế bào chết cho môi hiệu quả.</li>
+</ul>
+<div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://phongreviews.com/kem-nen-lancome/" target="_blank" rel="dofollow" class="ue2147298d2a39226c95048c6df3fd77e"><style> .ue2147298d2a39226c95048c6df3fd77e { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#ECF0F1; border:0!important; border-left:4px solid #3498DB!important; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); text-decoration:none; } .ue2147298d2a39226c95048c6df3fd77e:active, .ue2147298d2a39226c95048c6df3fd77e:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .ue2147298d2a39226c95048c6df3fd77e { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; } .ue2147298d2a39226c95048c6df3fd77e .ctaText { font-weight:bold; color:inherit; text-decoration:none; font-size: 16px; } .ue2147298d2a39226c95048c6df3fd77e .postTitle { color:#E74C3C; text-decoration: underline!important; font-size: 16px; } .ue2147298d2a39226c95048c6df3fd77e:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText">XEM THÊM:</span>&nbsp; <span class="postTitle">[Review] Top 4 loại Kem nền Lancome nào tốt nhất hiện nay</span></div></a></div><h2 id="top-8-mau-son-duong-dior-dep-nhat-duoc-ua-chuong-hien-nay" class="wpsm_toplist_heading">Top 8 màu Son dưỡng Dior đẹp nhất được ưa chuộng hiện nay</h2>
+<p>Để người dùng dễ dàng hơn trong việc lựa chọn <strong>son dưỡng Dior</strong> cho mình, phần tiếp theo của bài viết sẽ giới thiệu tới bạn top 8 dòng son dưỡng môi của Dior với màu đẹp nhất và được ưa chuộng nhất hiện nay. Vậy hãy cùng tìm hiểu chúng trước khi lựa chọn cho mình dòng sản phẩm với màu ưng ý nhất nhé.</p>
+<h3>1. Son dưỡng cho môi Dior Addict Lip Glow 004 Coral</h3>
+<p>Dior Addict Lip Glow 004 Coral  là dòng son dưỡng rất được yêu thích hiện nay của Dior. Sản phẩm này có màu cam Coral vô cùng xinh xắn, giúp trẻ hóa đôi môi của bạn. Không chỉ vậy, màu cam Coral này còn giúp màu môi của bạn nhìn giống thật hơn, giúp đôi môi bạn nhìn năng động và tự nhiên hơn rất nhiều.</p>
+<p>Thành phần có trong dòng son môi này cũng rất đáng để nói đến, an toàn và lành tính với người sử dụng. Nổi bật nhất trong bảng thành phần của sản phẩm này đó là Mango Butter mang đến công dụng dưỡng ẩm và tẩy da chết trên môi.</p><div class="phong-noi-dung-6" style="margin-top: 10px; margin-bottom: 10px; " id="phong-1913775994"><script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319429228267042" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7319429228267042" data-ad-slot="5113384471"></ins>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<p><img class="aligncenter size-full wp-image-10631" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20350'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="350" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-788x788.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 4" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4.jpg"><noscript><img class="aligncenter size-full wp-image-10631" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4.jpg" alt="Son dưỡng Dior" width="350" height="350" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-4-788x788.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 4"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/edDuFbaPiPStFmnI" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI SHOPEE</a></div></div>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/dXCfRti4QJiW0F04" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI LAZADA</a></div></div>
+<p>Ngoài ra, trong son môi này còn chứa Loofah Extract giúp ngăn ngừa tình trạng oxy hóa trên môi, giúp loại bỏ đi các nếp nhăn môi và làm mờ dần các đường vân môi.</p>
+<p>Bên cạnh đó, dòng son dưỡng Dior này còn chứa chỉ số chống nắng SPF 10 giúp giảm tác động của ánh nắng mặt trời với môi, giảm tình trạng thâm sạm trên môi. Không những vậy, dòng <strong>son dưỡng Dior Addict Lip Glow 004 Coral</strong> này còn có thể hạn chế sự sản sinh của các sắc tố melanin trên đôi môi của bạn.</p>
+<p><strong>Giá tham khảo: 850.000đ</strong></p>
+<h3>2. Son dưỡng Dior Addict Lip Glow 001 Pink</h3>
+<p>Dior Addict Lip Glow 001 Pink sẽ là dòng sản phẩm mang đến sự ngọt ngào cho đôi môi của bạn. Sở hữu màu hồng baby vô cùng dễ thương và đáng yêu, sản phẩm này sẽ mang tới cho đôi môi bạn cảm giác mỏng manh, dễ vỡ và cần được nuông chiều, chăm sóc.</p>
+<p><img class="aligncenter size-full wp-image-10632" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20314'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="314" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-300x269.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-1024x919.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-768x689.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-1536x1378.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-2048x1837.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-788x706.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 5" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5.jpg"><noscript><img class="aligncenter size-full wp-image-10632" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5.jpg" alt="Son dưỡng Dior" width="350" height="314" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-300x269.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-1024x919.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-768x689.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-1536x1378.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-2048x1837.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-5-788x706.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 5"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/tGL08Yggxr2qYWme" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG CHÍNH HÃNG TẠI TIKI</a></div></div>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/peEQGGLJXXNyPDjx" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI LAZADA</a></div></div>
+<p>Không chỉ vậy, sản phẩm này còn mang tới hiệu quả rất tốt trong việc chăm sóc cho đôi môi của bạn được sáng hồng rạng rỡ. Dòng son dưỡng này cũng có thể làm mờ các nếp nhăn trên môi cực đỉnh.</p>
+<div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://phongreviews.com/kem-nen-han-quoc/" target="_blank" rel="dofollow" class="uf103d64f18fcbd86b78363ede415b3fe"><style> .uf103d64f18fcbd86b78363ede415b3fe { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#ECF0F1; border:0!important; border-left:4px solid #3498DB!important; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); text-decoration:none; } .uf103d64f18fcbd86b78363ede415b3fe:active, .uf103d64f18fcbd86b78363ede415b3fe:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .uf103d64f18fcbd86b78363ede415b3fe { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; } .uf103d64f18fcbd86b78363ede415b3fe .ctaText { font-weight:bold; color:inherit; text-decoration:none; font-size: 16px; } .uf103d64f18fcbd86b78363ede415b3fe .postTitle { color:#E74C3C; text-decoration: underline!important; font-size: 16px; } .uf103d64f18fcbd86b78363ede415b3fe:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText">XEM THÊM:</span>&nbsp; <span class="postTitle">Top 6 Kem nền Hàn Quốc nào tốt, lớp makeup đẹp nhất hiện nay</span></div></a></div><p>Có một lưu ý rằng<strong> son dưỡng Dior Addict Lip Glow 001 Pink</strong> có màu không quá đậm. Do đó, bạn hoàn toàn có thể sử dụng để làm lớp son lót trước khi thoa son màu.</p>
+<p><strong>Giá tham khảo: 820.000đ</strong></p>
+<h3>3. Son dưỡng bổ sung collagen Dior Lip Maximizer 012 Rosewood</h3>
+<p>Dior Lip Maximizer 012 Rosewood cũng được đánh giá là dòng son dưỡng có màu đẹp và được ưa chuộng hiện nay. Thiết kế của sản phẩm này rất sang chảnh, đẹp mắt, khiến người dùng thích mê ngay từ lần nhìn đầu tiên.</p><div class="phong-trong-noi-dung-7" style="margin-top: 10px; margin-bottom: 10px; " id="phong-2065548124"><script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319429228267042" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7319429228267042" data-ad-slot="5113384471"></ins>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<p><img class="aligncenter size-full wp-image-10633" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20262'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="262" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-300x225.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-1024x767.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-767x574.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-1536x1150.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-2048x1533.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-788x589.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 6" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66.jpg"><noscript><img class="aligncenter size-full wp-image-10633" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66.jpg" alt="Son dưỡng Dior" width="350" height="262" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-300x225.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-1024x767.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-767x574.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-1536x1150.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-2048x1533.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-66-788x589.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 6"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/JNH548IupOl4ffA9" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI SHOPEE</a></div></div>
+<p>Sản phẩm có chất son mềm nhẹ như nước, giúp đôi môi của bạn bóng đẹp và căng mọng hơn. Chất son mềm nhẹ như vậy nhưng không hề mang đến cảm giác bết dính khi thoa lên môi.</p>
+<p>Sản phẩm son dưỡng này có khả năng cấp ẩm cho môi lên tới 24 giờ với màu hồng cam san hô rất trẻ đẹp và tự nhiên. Chính vì vậy, sản phẩm này rất được lòng các nàng, được các nàng yêu thích và lựa chọn.</p>
+<p><strong>Giá tham khảo: 749.000đ</strong></p>
+<h3>4. Son dưỡng dành cho môi Dior Addict Lip Glow 007 Raspberry</h3>
+<p>Dior Addict Lip Glow 007 Raspberry được đánh giá là dòng son được hàng triệu người để ý tới. Sản phẩm này có màu hồng cánh sen &#8211; màu sắc được mọi người nói rằng hơi sến. Tuy  nhiên, điều này không có nghĩa là sản phẩm không được yêu thích mà ngược lại màu 007 hồng cánh sen này còn nằm trong top những sản phẩm bán chạy nhất của hãng.</p>
+<p><img class="aligncenter size-full wp-image-10634" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20295'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="295" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-300x253.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-1024x863.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-768x647.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-1536x1295.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-2048x1726.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-788x664.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 7" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77.jpg"><noscript><img class="aligncenter size-full wp-image-10634" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77.jpg" alt="Son dưỡng Dior" width="350" height="295" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-300x253.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-1024x863.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-768x647.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-1536x1295.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-2048x1726.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-77-788x664.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 7"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/hURAKwpCJslZ8Avq" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI LAZADA</a></div></div>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/NXhrSipFCPQGuL6Q" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI SHOPEE</a></div></div>
+<p>Sản phẩm lên màu đậm hơn so với màu 001, phù hợp với những nàng sở hữu đôi môi nhiều khuyết điểm. Sản phẩm này được bổ sung dưỡng chất rất dồi dào. Vậy nên, chỉ cần một lượng nhỏ son với vài đường cơ bản là đôi môi của bạn đã đủ độ ẩm để trở nên mềm mượt suốt ngày dài.</p>
+<p>Không chỉ vậy, dòng son dưỡng này của Dior còn có thể dưỡng hồng đôi môi cũng như bảo vệ đôi môi của bạn an toàn trước các tia cực tím đến từ môi trường xung quanh.</p>
+<p><strong>Giá tham khảo: 760.000đ</strong></p>
+<h3>5. Son dưỡng Dior Addict Lip Glow Matte 102 Raspberry</h3>
+<p>Dior Addict Lip Glow Matte 102 Raspberry cũng có màu từa tựa với màu 007, hơi bánh bèo. Tuy nhiên, sản phẩm này vẫn rất được yêu thích bởi có thể tôn lên vẻ nữ tính và đáng yêu của các nàng.</p>
+<p><img class="aligncenter size-full wp-image-10635" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20321'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="321" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-300x275.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-1024x939.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-768x704.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-1536x1409.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-2048x1878.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-788x722.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 8" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88.jpg"><noscript><img class="aligncenter size-full wp-image-10635" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88.jpg" alt="Son dưỡng Dior" width="350" height="321" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-300x275.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-1024x939.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-768x704.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-1536x1409.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-2048x1878.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-88-788x722.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 8"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/GgfwE1693eDs8j7S" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG CHÍNH HÃNG TẠI TIKI</a></div></div>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/w5tD0MzI2qbdQeWE" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI LAZADA</a></div></div>
+<p>Dòng son dưỡng này có màu hồng baby ngả tím nhạt, giúp đôi môi của bạn dịu dàng và tươi tắn hơn rất nhiều. Sản phẩm cũng được bổ sung lượng dưỡng chất dồi dào, giúp đôi môi luôn ẩm mượt và mềm mại.</p>
+<p>Tuy nhiên, nhiều dưỡng là vậy nhưng son dưỡng này lại không gây cảm giác bết dính. Chính vì vậy, đây chính là lựa chọn cho các nàng có đôi môi hay tróc vảy, khô và sần sùi trong những ngày trời lạnh.</p>
+<div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://phongreviews.com/dau-goi-michiru/" target="_blank" rel="dofollow" class="u6aa9865e33850fb1d5cb4dbded665c55"><style> .u6aa9865e33850fb1d5cb4dbded665c55 { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#ECF0F1; border:0!important; border-left:4px solid #3498DB!important; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); text-decoration:none; } .u6aa9865e33850fb1d5cb4dbded665c55:active, .u6aa9865e33850fb1d5cb4dbded665c55:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .u6aa9865e33850fb1d5cb4dbded665c55 { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; } .u6aa9865e33850fb1d5cb4dbded665c55 .ctaText { font-weight:bold; color:inherit; text-decoration:none; font-size: 16px; } .u6aa9865e33850fb1d5cb4dbded665c55 .postTitle { color:#E74C3C; text-decoration: underline!important; font-size: 16px; } .u6aa9865e33850fb1d5cb4dbded665c55:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText">XEM THÊM:</span>&nbsp; <span class="postTitle">[Review] Dầu gội Michiru có thật sự tốt không? Có mấy loại?</span></div></a></div><p><strong>Giá tham khảo: 820.000đ</strong></p>
+<h3>6. Son dưỡng Collagen Dior Lip Maximizer 004 Coral</h3>
+<p>Collagen Dior Lip Maximizer 004 Coral nằm trong top những thỏi son bán chạy nhất của hãng. Sản phẩm này có màu cam rất ngọt ngào, giúp đôi môi của bạn tươi trẻ và sáng khỏe hơn.</p>
+<p><img class="aligncenter size-full wp-image-10636" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20350'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="350" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-788x788.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 9" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9.jpg"><noscript><img class="aligncenter size-full wp-image-10636" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9.jpg" alt="Son dưỡng Dior" width="350" height="350" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-9-788x788.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 9"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/UGqpNRzIncaGQSvI" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI SHOPEE</a></div></div>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/wK2bDr7zcEXpqtno" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI LAZADA</a></div></div>
+<p>Dòng <strong>son dưỡng Dior</strong> này có chứa rất nhiều dưỡng chất, giúp giữ ẩm và làm hồng đôi môi của bạn chỉ sau chừng 1 tháng sử dụng. Chính vì vậy, đây là lựa chọn lý tưởng dành cho các nàng đang có mong muốn tìm mua một thỏi son dưỡng tốt để chăm sóc và bảo vệ cho đôi môi của mình, giúp đôi môi đó luôn căng mọng và quyến rũ.</p>
+<p><strong>Giá tham khảo: 749.000đ</strong></p>
+<h3>7. Son dưỡng môi Dior Addict Lip Glow 008 Ultra Pink</h3><div class="phong-noi-dung_2" style="margin-left: auto; margin-right: auto; text-align: center; margin-top: 10px; margin-bottom: 10px; " id="phong-941214208"><a href="https://shorten.asia/qRhFx1Ky"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201109%20489'%3E%3C/svg%3E" alt="Tiki sale 15-01" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale.jpg 1109w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-300x132.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-1024x452.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-767x338.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-1536x677.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-2048x903.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-788x347.jpg 788w" data-lazy-sizes="(max-width: 1109px) 100vw, 1109px" class="no-lazyload" width="1109" height="489" style="display: inline-block;" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale.jpg" /><noscript><img src="https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale.jpg" alt="Tiki sale 15-01"  srcset="https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale.jpg 1109w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-300x132.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-1024x452.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-767x338.jpg 767w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-1536x677.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-2048x903.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/09/tiki-sale-788x347.jpg 788w" sizes="(max-width: 1109px) 100vw, 1109px" class="no-lazyload" width="1109" height="489"  style="display: inline-block;" /></noscript></a></div>
+<p>Dior Addict Lip Glow 008 Ultra Pink là dòng son dưỡng có màu cánh sen cực sang và ít sến. Sản phẩm này sở hữu tông màu mong manh, giúp tôn lên vẻ đẹp dịu dàng và nữ tính cho các nàng.</p>
+<p><img class="aligncenter size-full wp-image-10637" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20350'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="350" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-788x788.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 10" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10.jpg"><noscript><img class="aligncenter size-full wp-image-10637" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10.jpg" alt="Son dưỡng Dior" width="350" height="350" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-10-788x788.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 10"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/1fPUssB8AFOo6kwm" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG GIÁ ƯU ĐÃI TẠI SHOPEE</a></div></div>
+<p>Không chỉ vậy, dòng <strong>son dưỡng Dior</strong> này còn có thể dưỡng môi vô cùng hiệu quả, giúp đôi môi của bạn không chỉ ẩm mượt, mềm mại hơn và còn hồng hào, căng mọng và an toàn trước ánh nắng mặt trời. Sản phẩm này khi lên môi không quá bóng nên các nàng có thể hoàn toàn yên tâm khi sử dụng.</p>
+<p><strong>Giá tham khảo: 740.000đ</strong></p>
+<h3>8. Son dưỡng Dior Addict Lip Glow To The Max 201 Pink</h3>
+<p>Dior Addict Lip Glow To The Max 201 Pink được đánh giá cao bởi khả năng dưỡng môi siêu đỉnh, phù hợp với mọi loại thời tiết, bao gồm cả thời tiết lạnh, hanh khô nhất.</p>
+<p>Không chỉ vậy, sản phẩm này còn được trộn thêm ít nhũ lấp lánh, giúp đôi môi của bạn thêm căng mọng và tràn đầy sức sống hơn. Sản phẩm có màu hồng baby nhũ nhẹ gần giống với màu môi tự nhiên, giúp đôi môi của bạn tươi trẻ và tự nhiên hơn.</p>
+<p><img class="aligncenter size-full wp-image-10638" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20350'%3E%3C/svg%3E" alt="Son dưỡng Dior" width="350" height="350" data-lazy-srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-788x788.jpg 788w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 11" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11.jpg"><noscript><img class="aligncenter size-full wp-image-10638" src="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11.jpg" alt="Son dưỡng Dior" width="350" height="350" srcset="https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11.jpg 350w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-300x300.jpg 300w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-1024x1024.jpg 1024w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-150x150.jpg 150w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-768x768.jpg 768w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-1536x1536.jpg 1536w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-2048x2048.jpg 2048w, https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior-11-788x788.jpg 788w" sizes="(max-width: 350px) 100vw, 350px" title="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng 11"></noscript></p>
+<div class="priced_block clearfix"><div><a href="https://phongreviews.com/go/QQQK73fE8NaZWdZl" class="re_track_btn btn_offer_block" target="_blank" rel="nofollow noopener">MUA HÀNG CHÍNH HÃNG TẠI TIKI</a></div></div>
+<p>Thành phần chính có trong dòng sản phẩm này đó là bơ xoài cho hiệu quả dưỡng ẩm rất tốt, có thể làm đầy các nếp nhăn trên đôi môi của bạn, giúp đôi môi đó được căng mọng và mềm mượt suốt ngày dài. Sản phẩm cũng được trang bị thêm khả năng chống nắng SPF 10, giúp bảo vệ đôi môi trước ánh nắng mặt trời, hạn chế tình trạng lão hóa của môi hiệu quả.</p><div class="phong-trong-noi-dung-8" style="margin-top: 10px; margin-bottom: 10px; " id="phong-826221275"><script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319429228267042" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7319429228267042" data-ad-slot="6239228842" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<p><strong>Giá tham khảo: 699.000đ</strong></p>
+<p>Trên đây là top 8 dòng <strong>son dưỡng Dior</strong> có màu đẹp nhất và được yêu thích nhất hiện nay. Sở hữu những thỏi son này sẽ giúp đôi môi bạn đẹp hơn, hồng hào, tươi trẻ và quyến rũ hơn rất nhiều. Vậy nếu bạn vẫn còn đang băn khoăn chưa biết chọn mua cho mình thỏi son dưỡng nào thì son dưỡng của Dior chính là lựa chọn hoàn hảo dành cho bạn đó.</p>
+<div class="kk-star-ratings
+     kksr-valign-bottom     kksr-align-right     kksr-disabled" data-payload="{&quot;align&quot;:&quot;right&quot;,&quot;id&quot;:&quot;10624&quot;,&quot;readonly&quot;:&quot;1&quot;,&quot;slug&quot;:&quot;default&quot;,&quot;valign&quot;:&quot;bottom&quot;,&quot;reference&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;2&quot;,&quot;score&quot;:&quot;5&quot;,&quot;best&quot;:&quot;5&quot;,&quot;gap&quot;:&quot;4&quot;,&quot;greet&quot;:&quot;\u0110\u00e1nh Gi\u00e1 post&quot;,&quot;legend&quot;:&quot;5\/5 - (2 b\u00ecnh ch\u1ecdn)&quot;,&quot;size&quot;:&quot;18&quot;,&quot;width&quot;:&quot;108&quot;,&quot;_legend&quot;:&quot;{score}\/{best} - ({count} {votes})&quot;}">
+<div class="kksr-stars">
+<div class="kksr-stars-inactive">
+<div class="kksr-star" data-star="1" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" data-star="2" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" data-star="3" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" data-star="4" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" data-star="5" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+</div>
+<div class="kksr-stars-active" style="width: 108px;">
+<div class="kksr-star" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+<div class="kksr-star" style="padding-right: 4px">
+<div class="kksr-icon" style="width: 18px; height: 18px;"></div>
+</div>
+</div>
+</div>
+<div class="kksr-legend">
+5/5 - (2 bình chọn) </div>
+</div>
+<div class="phong-sau-noi-dung-adsence" style="margin-top: 10px; margin-bottom: 10px; " id="phong-142211880"><script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319429228267042" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7319429228267042" data-ad-slot="5113384471"></ins>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</article>
+<div class="clearfix"></div>
+
+<div class="single_custom_bottom mt10 mb10 margincenter text-center clearbox">
+<div class="wpsm-titlebox clearbox wpsm_style_main rehub-main-color-border"><strong class="rehub-main-color">SẢN PHẨM BÁN CHẠY</strong><div>
+<noindex> <div class="egg-container egg-grid"> <div class="container-fluid"> <div class="row"> <div class="col-md-4 col-xs-6 cegg-gridbox"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fnhung-giac-mo-o-hieu-sach-morisaki-p614854.html"> <div class="cegg-thumb"> <div class="cegg-promotion"> <span class="cegg-discount">- 28%</span> </div> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Những Giấc Mơ Ở Hiệu Sách Morisaki" data-lazy-src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/1/x/1x2acr3d.u4972.d20170419.t115542.562440.jpg" /><noscript><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/1/x/1x2acr3d.u4972.d20170419.t115542.562440.jpg" alt="Những Giấc Mơ Ở Hiệu Sách Morisaki" /></noscript> </div> <div class="producttitle"> <div class="cegg-mb10"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /></noscript> <small>tiki.vn</small> </div> Những Giấc Mơ Ở Hiệu Sách Morisaki </div> <div class="productprice"> <strike class="text-muted">60.000<small>&#8363;</small></strike>&nbsp; <span class="cegg-price cegg-price-color">43.000&#8363;</span> </div> <div class="cegg-btn-grid cegg-hidden hidden-xs"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fnhung-giac-mo-o-hieu-sach-morisaki-p614854.html" class="btn btn-danger">Buy Now</a> </div> </a> </div> <div class="col-md-4 col-xs-6 cegg-gridbox"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fnuoc-tay-trang-lam-sach-sau-kiem-soat-ba-nhon-cho-da-dau-nhay-cam-la-roche-posay-micellar-water-ultra-oily-skin-400ml-p2616909.html"> <div class="cegg-thumb"> <div class="cegg-promotion"> <span class="cegg-discount">- 12%</span> </div> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Nước Tẩy Trang Làm Sạch Sâu &amp; Kiểm Soát Bã Nhờn Cho Da Dầu Nhạy Cảm La Roche-Posay Micellar Water Ultra Oily Skin 400ml" data-lazy-src="https://salt.tikicdn.com/cache/280x280/ts/product/7a/44/38/da7627e8281096aedf3c255203df2d81.jpg" /><noscript><img src="https://salt.tikicdn.com/cache/280x280/ts/product/7a/44/38/da7627e8281096aedf3c255203df2d81.jpg" alt="Nước Tẩy Trang Làm Sạch Sâu &amp; Kiểm Soát Bã Nhờn Cho Da Dầu Nhạy Cảm La Roche-Posay Micellar Water Ultra Oily Skin 400ml" /></noscript> </div> <div class="producttitle"> <div class="cegg-mb10"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /></noscript> <small>tiki.vn</small> </div> Nước Tẩy Trang Làm Sạch Sâu &amp; Kiểm Soát Bã Nhờn Cho Da Dầu Nhạy Cảm La... </div> <div class="productprice"> <strike class="text-muted">445.000<small>&#8363;</small></strike>&nbsp; <span class="cegg-price cegg-price-color">389.000&#8363;</span> </div> <div class="cegg-btn-grid cegg-hidden hidden-xs"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fnuoc-tay-trang-lam-sach-sau-kiem-soat-ba-nhon-cho-da-dau-nhay-cam-la-roche-posay-micellar-water-ultra-oily-skin-400ml-p2616909.html" class="btn btn-danger">Buy Now</a> </div> </a> </div> <div class="clearfix visible-xs-block"></div> <div class="col-md-4 col-xs-6 cegg-gridbox"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fthe-gioi-rong-lon-long-nguoi-chat-hep-tang-kem-1-bookmark-p70016690.html"> <div class="cegg-thumb"> <div class="cegg-promotion"> <span class="cegg-discount">- 35%</span> </div> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Thế Giới Rộng Lớn Lòng Người Chật Hẹp (Tặng Kèm 1 Bookmark )" data-lazy-src="https://salt.tikicdn.com/cache/280x280/ts/product/f3/ce/88/8a7e7a39848d37432370abda30fe2a43.jpg" /><noscript><img src="https://salt.tikicdn.com/cache/280x280/ts/product/f3/ce/88/8a7e7a39848d37432370abda30fe2a43.jpg" alt="Thế Giới Rộng Lớn Lòng Người Chật Hẹp (Tặng Kèm 1 Bookmark )" /></noscript> </div> <div class="producttitle"> <div class="cegg-mb10"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /></noscript> <small>tiki.vn</small> </div> Thế Giới Rộng Lớn Lòng Người Chật Hẹp (Tặng Kèm 1 Bookmark ) </div> <div class="productprice"> <strike class="text-muted">92.000<small>&#8363;</small></strike>&nbsp; <span class="cegg-price cegg-price-color">59.800&#8363;</span> </div> <div class="cegg-btn-grid cegg-hidden hidden-xs"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fthe-gioi-rong-lon-long-nguoi-chat-hep-tang-kem-1-bookmark-p70016690.html" class="btn btn-danger">Buy Now</a> </div> </a> </div> <div class="clearfix hidden-xs"></div> <div class="col-md-4 col-xs-6 cegg-gridbox"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fmay-giat-samsung-inverter-8-kg-ww80t3020ww-chi-giao-hcm-p72748642.html"> <div class="cegg-thumb"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Máy giặt Samsung Inverter 8 kg WW80T3020WW - Chỉ giao HCM" data-lazy-src="https://salt.tikicdn.com/cache/280x280/ts/product/66/a8/13/2e2080910aeb92c72509551b7dd9369e.jpg" /><noscript><img src="https://salt.tikicdn.com/cache/280x280/ts/product/66/a8/13/2e2080910aeb92c72509551b7dd9369e.jpg" alt="Máy giặt Samsung Inverter 8 kg WW80T3020WW - Chỉ giao HCM" /></noscript> </div> <div class="producttitle"> <div class="cegg-mb10"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /></noscript> <small>tiki.vn</small> </div> Máy giặt Samsung Inverter 8 kg WW80T3020WW - Chỉ giao HCM </div> <div class="productprice"> <span class="cegg-price cegg-price-color">5.070.000&#8363;</span> </div> <div class="cegg-btn-grid cegg-hidden hidden-xs"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fmay-giat-samsung-inverter-8-kg-ww80t3020ww-chi-giao-hcm-p72748642.html" class="btn btn-danger">Buy Now</a> </div> </a> </div> <div class="clearfix visible-xs-block"></div> <div class="col-md-4 col-xs-6 cegg-gridbox"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fmay-rua-mat-foreo-luna-mini-3-loai-bo-bui-ban-va-can-trang-diem-chi-trong-30s-p35910756.html"> <div class="cegg-thumb"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Máy rửa mặt Foreo LUNA MINI 3 - Loại bỏ bụi bẩn và cặn trang điểm chỉ trong 30s" data-lazy-src="https://salt.tikicdn.com/cache/280x280/ts/product/9e/2c/15/d3d2b5d64e0fce7d7605afa866ac86f1.jpg" /><noscript><img src="https://salt.tikicdn.com/cache/280x280/ts/product/9e/2c/15/d3d2b5d64e0fce7d7605afa866ac86f1.jpg" alt="Máy rửa mặt Foreo LUNA MINI 3 - Loại bỏ bụi bẩn và cặn trang điểm chỉ trong 30s" /></noscript> </div> <div class="producttitle"> <div class="cegg-mb10"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /></noscript> <small>tiki.vn</small> </div> Máy rửa mặt Foreo LUNA MINI 3 - Loại bỏ bụi bẩn và cặn trang điểm chỉ trong 30s </div> <div class="productprice"> <span class="cegg-price cegg-price-color">2.425.000&#8363;</span> </div> <div class="cegg-btn-grid cegg-hidden hidden-xs"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fmay-rua-mat-foreo-luna-mini-3-loai-bo-bui-ban-va-can-trang-diem-chi-trong-30s-p35910756.html" class="btn btn-danger">Buy Now</a> </div> </a> </div> <div class="col-md-4 col-xs-6 cegg-gridbox"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fnoi-chien-khong-dau-bluestone-afb-5870-5l-hang-chinh-hang-p20024114.html"> <div class="cegg-thumb"> <div class="cegg-promotion"> <span class="cegg-discount">- 35%</span> </div> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Nồi Chiên Không Dầu Bluestone AFB-5870 (5L) - Hàng Chính Hãng" data-lazy-src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/56/96/381900ab5abab395fd7b188a0cb33741.jpg" /><noscript><img src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/56/96/381900ab5abab395fd7b188a0cb33741.jpg" alt="Nồi Chiên Không Dầu Bluestone AFB-5870 (5L) - Hàng Chính Hãng" /></noscript> </div> <div class="producttitle"> <div class="cegg-mb10"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/ce-logos/icon_tiki-vn.png" /></noscript> <small>tiki.vn</small> </div> Nồi Chiên Không Dầu Bluestone AFB-5870 (5L) - Hàng Chính Hãng </div> <div class="productprice"> <strike class="text-muted">2.999.000<small>&#8363;</small></strike>&nbsp; <span class="cegg-price cegg-price-color">1.943.800&#8363;</span> </div> <div class="cegg-btn-grid cegg-hidden hidden-xs"> <a rel="nofollow" target="_blank" href="https://go.isclix.com/deep_link/5095821440048282740?url=https%3A%2F%2Ftiki.vn%2Fnoi-chien-khong-dau-bluestone-afb-5870-5l-hang-chinh-hang-p20024114.html" class="btn btn-danger">Buy Now</a> </div> </a> </div> <div class="clearfix hidden-xs"></div><div class="clearfix visible-xs-block"></div> </div> </div> </div> </noindex>
+</div></div> </div>
+<div class="clearfix"></div>
+<div class="post_share">
+<div class="social_icon  row_social_inpost"><div class="favour_in_row favour_btn_red"><div class="heart_thumb_wrap text-center"><span class="flowhidden cell_wishlist"><span class="heartplus" data-post_id="10624" data-informer="0"><span class="ml5 rtlmr5 wishaddwrap" id="wishadd10624">Save</span><span class="ml5 rtlmr5 wishaddedwrap" id="wishadded10624">Saved</span><span class="ml5 rtlmr5 wishremovedwrap" id="wishremoved10624">Removed</span> </span></span><span id="wishcount10624" class="thumbscount">0</span> </div></div><span data-href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F" class="fb share-link-image" data-service="facebook"><i class="rhicon rhi-facebook"></i></span><span data-href="https://twitter.com/share?url=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F&text=Top+8+Son+d%C6%B0%E1%BB%A1ng+Dior+n%C3%A0o+c%C3%B3+m%C3%A0u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+%C4%91%C6%B0%E1%BB%A3c+%C6%B0a+chu%E1%BB%99ng" class="tw share-link-image" data-service="twitter"><i class="rhicon rhi-twitter"></i></span><span data-href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F&amp;media=https://phongreviews.com/wp-content/uploads/2021/04/son-duong-dior.jpg&amp;description=Top+8+Son+d%C6%B0%E1%BB%A1ng+Dior+n%C3%A0o+c%C3%B3+m%C3%A0u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+%C4%91%C6%B0%E1%BB%A3c+%C6%B0a+chu%E1%BB%99ng" class="pn share-link-image" data-service="pinterest"><i class="rhicon rhi-pinterest-p"></i></span><span data-href="mailto:?subject=Top+8+Son+d%C6%B0%E1%BB%A1ng+Dior+n%C3%A0o+c%C3%B3+m%C3%A0u+%C4%91%E1%BA%B9p+nh%E1%BA%A5t+%C4%91%C6%B0%E1%BB%A3c+%C6%B0a+chu%E1%BB%99ng&body=Check out: https%3A%2F%2Fphongreviews.com%2Fson-duong-dior%2F - Phong+Reviews" class="in share-link-image" data-service="email"><i class="rhicon rhi-envelope"></i></span></div> </div>
+
+<div class="float-posts-nav" id="float-posts-nav">
+<div class="postNavigation prevPostBox">
+<div class="postnavprev">
+<div class="inner-prevnext">
+<div class="thumbnail">
+<img class="lazyload" data-skip-lazy="" data-src="https://phongreviews.com/wp-content/uploads/thumbs_dir/ban-chai-dien-oral-b-vitality-p5i7aqkiypv562c43ire7jo70qop8uy9rvogirvrjw.jpg" width="70" height="70" alt="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng" src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_70_70.png" /> </div>
+<div class="headline"><span>Previous</span><h4><a href="https://phongreviews.com/ban-chai-dien-oral-b-vitality/">Bàn chải điện Oral-B Vitality có tốt không? Giá bao nhiêu?</a></h4></div>
+</div>
+</div>
+</div>
+<div class="postNavigation nextPostBox">
+<div class="postnavprev">
+<div class="inner-prevnext">
+<div class="thumbnail">
+<img class="lazyload" data-skip-lazy="" data-src="https://phongreviews.com/wp-content/uploads/thumbs_dir/kem-tay-long-veet-p5i3myl2tvgzi3r0l25b5assx2774gszbn4vf99pvg.jpg" width="70" height="70" alt="Top 8 Son dưỡng Dior nào có màu đẹp nhất được ưa chuộng" src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_70_70.png" /> </div>
+<div class="headline"><span>Next</span><h4><a href="https://phongreviews.com/kem-tay-long-veet/">Kem tẩy lông Veet có tốt không? Hướng dẫn tẩy lông hiệu quả</a></h4></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="tags mb25">
+<p></p>
+</div>
+<div class="related_articles pt25 border-top mb0 clearfix">
+<div class="related_title rehub-main-font font120 fontbold mb35">
+Bài viết liên quan </div>
+<div class="columned_grid_module rh-flex-eq-height col_wrap_fourth mb0">
+<article class="col_item column_grid rh-heading-hover-color rh-bg-hover-color no-padding rh-cartbox">
+<div class="button_action abdposright pr5 pt5">
+<div class="floatleft mr5">
+<div class="heart_thumb_wrap text-center"><span class="flowhidden cell_wishlist"><span class="heartplus" data-post_id="75421" data-informer="0"><span class="ml5 rtlmr5 wishaddedwrap" id="wishadded75421">Added to wishlist</span><span class="ml5 rtlmr5 wishremovedwrap" id="wishremoved75421">Removed from wishlist</span> </span></span><span id="wishcount75421" class="thumbscount">0</span> </div>
+</div>
+</div>
+<figure class="mb20 position-relative text-center">
+<a href="https://phongreviews.com/sua-rua-mat-khong-bot/" class="height-150 img-centered-flex rh-flex-center-align rh-flex-justify-center mt15 ml15 mr15">
+<img class="lazyload" data-skip-lazy="" data-src="https://phongreviews.com/wp-content/uploads/2022/05/sua-rua-mat-khong-bot.jpg?v=1652758793" width="336" height="220" alt="Top 8 Sữa rửa mặt không bọt tốt, dịu nhẹ không kích ứng da" src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" /> </a>
+</figure>
+<div class="content_constructor pb0 pr20 pl20 mobilepadding">
+<h3 class="mb15 mt0 font110 mobfont100 fontnormal lineheight20"><a href="https://phongreviews.com/sua-rua-mat-khong-bot/">Top 8 Sữa rửa mặt không bọt tốt, dịu nhẹ không kích ứng da</a></h3>
+<div class="rh-flex-center-align mb15 ">
+<div>
+</div>
+</div>
+</div>
+</article>
+<article class="col_item column_grid rh-heading-hover-color rh-bg-hover-color no-padding rh-cartbox">
+<div class="button_action abdposright pr5 pt5">
+<div class="floatleft mr5">
+<div class="heart_thumb_wrap text-center"><span class="flowhidden cell_wishlist"><span class="heartplus" data-post_id="75231" data-informer="0"><span class="ml5 rtlmr5 wishaddedwrap" id="wishadded75231">Added to wishlist</span><span class="ml5 rtlmr5 wishremovedwrap" id="wishremoved75231">Removed from wishlist</span> </span></span><span id="wishcount75231" class="thumbscount">0</span> </div>
+</div>
+</div>
+<figure class="mb20 position-relative text-center">
+<a href="https://phongreviews.com/ke-mat-maybelline/" class="height-150 img-centered-flex rh-flex-center-align rh-flex-justify-center mt15 ml15 mr15">
+<img class="lazyload" data-skip-lazy="" data-src="https://phongreviews.com/wp-content/uploads/2022/05/ke-mat-maybelline-2-1.jpg?v=1652670869" width="336" height="220" alt="[Review] Top 3 loại kẻ mắt Maybelline New York bán chạy nhất" src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" /> </a>
+</figure>
+<div class="content_constructor pb0 pr20 pl20 mobilepadding">
+<h3 class="mb15 mt0 font110 mobfont100 fontnormal lineheight20"><a href="https://phongreviews.com/ke-mat-maybelline/">[Review] Top 3 loại kẻ mắt Maybelline New York bán chạy nhất</a></h3>
+<div class="rh-flex-center-align mb15 ">
+<div>
+ </div>
+</div>
+</div>
+</article>
+<article class="col_item column_grid rh-heading-hover-color rh-bg-hover-color no-padding rh-cartbox">
+<div class="button_action abdposright pr5 pt5">
+<div class="floatleft mr5">
+<div class="heart_thumb_wrap text-center"><span class="flowhidden cell_wishlist"><span class="heartplus" data-post_id="75265" data-informer="0"><span class="ml5 rtlmr5 wishaddedwrap" id="wishadded75265">Added to wishlist</span><span class="ml5 rtlmr5 wishremovedwrap" id="wishremoved75265">Removed from wishlist</span> </span></span><span id="wishcount75265" class="thumbscount">0</span> </div>
+</div>
+</div>
+<figure class="mb20 position-relative text-center">
+<a href="https://phongreviews.com/sua-rua-mat-obagi/" class="height-150 img-centered-flex rh-flex-center-align rh-flex-justify-center mt15 ml15 mr15">
+<img class="lazyload" data-skip-lazy="" data-src="https://phongreviews.com/wp-content/uploads/2022/05/sua-rua-mat-obagi.jpg?v=1652668937" width="336" height="220" alt="Top 5 loại sữa rửa mặt Obagi tốt bán chạy nhất thị trường" src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" /> </a>
+</figure>
+<div class="content_constructor pb0 pr20 pl20 mobilepadding">
+<h3 class="mb15 mt0 font110 mobfont100 fontnormal lineheight20"><a href="https://phongreviews.com/sua-rua-mat-obagi/">Top 5 loại sữa rửa mặt Obagi tốt bán chạy nhất thị trường</a></h3>
+<div class="rh-flex-center-align mb15 ">
+<div>
+</div>
+</div>
+</div>
+</article>
+<article class="col_item column_grid rh-heading-hover-color rh-bg-hover-color no-padding rh-cartbox">
+<div class="button_action abdposright pr5 pt5">
+<div class="floatleft mr5">
+<div class="heart_thumb_wrap text-center"><span class="flowhidden cell_wishlist"><span class="heartplus" data-post_id="75433" data-informer="0"><span class="ml5 rtlmr5 wishaddedwrap" id="wishadded75433">Added to wishlist</span><span class="ml5 rtlmr5 wishremovedwrap" id="wishremoved75433">Removed from wishlist</span> </span></span><span id="wishcount75433" class="thumbscount">0</span> </div>
+</div>
+</div>
+<figure class="mb20 position-relative text-center">
+<a href="https://phongreviews.com/sua-rua-mat-dang-gel/" class="height-150 img-centered-flex rh-flex-center-align rh-flex-justify-center mt15 ml15 mr15">
+<img class="lazyload" data-skip-lazy="" data-src="https://phongreviews.com/wp-content/uploads/2022/05/sua-rua-mat-dang-gel.jpg?v=1652688583" width="336" height="220" alt="Top 8 loại sữa rửa mặt dạng gel tốt nhất được tin dùng nhất" src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" /> </a>
+</figure>
+<div class="content_constructor pb0 pr20 pl20 mobilepadding">
+<h3 class="mb15 mt0 font110 mobfont100 fontnormal lineheight20"><a href="https://phongreviews.com/sua-rua-mat-dang-gel/">Top 8 loại sữa rửa mặt dạng gel tốt nhất được tin dùng nhất</a></h3>
+<div class="rh-flex-center-align mb15 ">
+ <div>
+</div>
+</div>
+</div>
+</article> </div></div>
+<div id="comments" class="clearfix">
+<div class="post-comments">
+<div class='title_comments'>We will be happy to hear your thoughts</div> <div id="tab-1">
+<ol class="commentlist">
+</ol>
+<div id='comments_pagination'>
+</div>
+</div>
+<ol id="loadcomment-list" class="commentlist">
+</ol>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/son-duong-dior/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://phongreviews.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><textarea id="comment" name="comment" cols="30" rows="10" aria-required="true"></textarea><div class="usr_re"><input id="author" type="text" value="" name="author" placeholder="Name"></div>
+<div class="email_re"><input id="email" type="text" value="" name="email" placeholder="E-mail"></div>
+<div class="site_re end"><input id="url" type="text" value="" name="url" placeholder="Website"></div><div class="clearfix"></div>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình luận kế tiếp của tôi.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Submit" /> <input type='hidden' name='comment_post_ID' value='10624' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form> </div>
+</div> 
+</div> </div>
+</div>
+
+
+<aside class="sidebar">
+
+<div id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://phongreviews.com/">
+<input type="text" name="s" placeholder="Search" class="re-ajax-search" autocomplete="off" data-posttype="post">
+<input type="hidden" name="post_type" value="post" /> <button type="submit" class="btnsearch hideonmobile" aria-label="Search"><i class="rhicon rhi-search"></i></button>
+</form>
+<div class="re-aj-search-wrap rhscrollthin"></div></div><div id="rehub_posts_widget-12" class="widget posts_widget"><div class="title">Latest Posts</div> <div class="color_sidebar ">
+<div class="tabs-item clearfix">
+<div class="clearfix flowhidden mb15 pb15 border-grey-bottom">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/sua-rua-mat-khong-bot/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/sua-rua-mat-khong-bot-100x82.jpg?v=1652758793" alt="Sữa rửa mặt không bọt" data-skip-lazy="" class="lazyload " width="100" height="82"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/sua-rua-mat-khong-bot/">Top 8 Sữa rửa mặt không bọt tốt, dịu nhẹ không kích ứng da</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/suc-khoe/" class="cat">Sức Khỏe &amp; Làm Đẹp</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/sua-rua-mat-khong-bot/#respond" class="comm_meta">0</a></span>
+</div>
+</div>
+</div>
+<div class="clearfix flowhidden mb15 pb15 border-grey-bottom">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/quan-cafe-dep-o-da-nang/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/quan-cafe-dep-o-da-nang-100x133.jpg?v=1652755014" alt="quan-cafe-dep-o-da-nang" data-skip-lazy="" class="lazyload " width="100" height="133"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/quan-cafe-dep-o-da-nang/">Top 10 Quán cafe đẹp ở Đà Nẵng check-in cực HOT của giới trẻ</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/am-thuc/" class="cat">Ẩm thực</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/quan-cafe-dep-o-da-nang/#respond" class="comm_meta">0</a></span>
+</div>
+</div>
+</div>
+<div class="clearfix flowhidden mb15 pb15 border-grey-bottom">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/sach-ngay-xua-co-mot-chuyen-tinh/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/sach-ngay-xua-co-mot-chuyen-tinh-100x100.jpg?v=1652666705" alt="sách ngày xưa có một chuyện tình" data-skip-lazy="" class="lazyload " width="100" height="100"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/sach-ngay-xua-co-mot-chuyen-tinh/">[Review] sách Ngày Xưa Có Một Chuyện Tình &#8211; Nguyễn Nhật Ánh</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/giai-tri/sach-va-truyen/" class="cat">Sách và Truyện</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/sach-ngay-xua-co-mot-chuyen-tinh/#respond" class="comm_meta">0</a></span>
+</div>
+</div>
+</div>
+<div class="clearfix flowhidden mb15 pb15 border-grey-bottom">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/ke-mat-maybelline/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/ke-mat-maybelline-2-1-100x100.jpg?v=1652670869" alt="kẻ mắt maybelline" data-skip-lazy="" class="lazyload " width="100" height="100"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/ke-mat-maybelline/">[Review] Top 3 loại kẻ mắt Maybelline New York bán chạy nhất</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/suc-khoe/" class="cat">Sức Khỏe &amp; Làm Đẹp</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/ke-mat-maybelline/#respond" class="comm_meta">0</a></span>
+</div>
+ </div>
+</div>
+<div class="clearfix flowhidden mb15 pb15 border-grey-bottom">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/cach-lam-ra-dong-thit-nhanh/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/cach-lam-ra-dong-thit-nhanh-100x47.jpg?v=1652679797" alt="cach-lam-ra-dong-thit-nhanh" data-skip-lazy="" class="lazyload " width="100" height="47"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/cach-lam-ra-dong-thit-nhanh/">8 Cách làm rã đông thịt nhanh chóng đơn giản tại nhà</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/kinh-nghiem/" class="cat">Kinh nghiệm</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/cach-lam-ra-dong-thit-nhanh/#respond" class="comm_meta">0</a></span>
+</div>
+</div>
+</div>
+<div class="clearfix flowhidden mb15 pb15 border-grey-bottom">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/sua-rua-mat-obagi/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/sua-rua-mat-obagi-100x79.jpg?v=1652668937" alt="sua-rua-mat-obagi" data-skip-lazy="" class="lazyload " width="100" height="79"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/sua-rua-mat-obagi/">Top 5 loại sữa rửa mặt Obagi tốt bán chạy nhất thị trường</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/suc-khoe/" class="cat">Sức Khỏe &amp; Làm Đẹp</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/sua-rua-mat-obagi/#respond" class="comm_meta">0</a></span>
+</div>
+</div>
+</div>
+<div class="clearfix flowhidden mb15 pb15 border-grey-bottom">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/giuong-ngu-tan-co-dien/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/giuong-ngu-tan-co-dien-100x100.jpg?v=1652669631" alt="giường ngủ tân cổ điển" data-skip-lazy="" class="lazyload " width="100" height="100"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/giuong-ngu-tan-co-dien/">Top 10 mẫu giường ngủ tân cổ điển sang trọng, chất lượng nhất</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/noi-that/" class="cat">Nội Thất</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/giuong-ngu-tan-co-dien/#respond" class="comm_meta">0</a></span>
+</div>
+</div>
+</div>
+<div class="clearfix flowhidden">
+<figure class="floatleft width-100 img-maxh-100 img-width-auto"><a href="https://phongreviews.com/thiep-giang-sinh-handmade/">
+<img src="https://phongreviews.com/wp-content/themes/rehub-theme/images/default/noimage_100_70.png" data-src="https://phongreviews.com/wp-content/uploads/2022/05/thiep-giang-sinh-handmade-100x75.jpg?v=1652678954" alt="thiep-giang-sinh-handmade" data-skip-lazy="" class="lazyload " width="100" height="75"> </a></figure>
+<div class="detail floatright width-100-calc pl15 rtlpr15">
+<h5 class="mt0 lineheight20 fontnormal font95"><a href="https://phongreviews.com/thiep-giang-sinh-handmade/">Hướng dẫn 4 cách làm thiệp giáng sinh handmade đơn giản đẹp</a></h5>
+<div class="post-meta">
+<span class="cat_link_meta"><a href="https://phongreviews.com/chuyen-muc/kinh-nghiem/" class="cat">Kinh nghiệm</a></span>
+<span class="comm_count_meta"><a href="https://phongreviews.com/thiep-giang-sinh-handmade/#respond" class="comm_meta">0</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="rehub_sticky_on_scroll-4" class="widget stickyscroll_widget pb0"> <div class="border-lightgrey-double pb15 pl5 pr15 pt15 rehub-main-color-border whitebg"><ul class="autocontents" id="kcmenu">
+<li class="top"><a href="#gioi-thieu-ve-thuong-hieu-son-duong-dior">Giới thiệu về thương hiệu son dưỡng Dior</a></li>
+<li class="top"><a href="#son-duong-dior-co-tot-khong">Son dưỡng Dior có tốt không?</a></li>
+<li class="top"><a href="#son-duong-dior-co-may-loai">Son dưỡng Dior có mấy loại?</a></li>
+<li class="top"><a href="#top-8-mau-son-duong-dior-dep-nhat-duoc-ua-chuong-hien-nay">Top 8 màu Son dưỡng Dior đẹp nhất được ưa chuộng hiện nay</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#1--son-duong-cho-moi-dior-addict-lip-glow-004-coral">1. Son dưỡng cho môi Dior Addict Lip Glow 004 Coral</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#2--son-duong-dior-addict-lip-glow-001-pink">2. Son dưỡng Dior Addict Lip Glow 001 Pink</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#3--son-duong-bo-sung-collagen-dior-lip-maximizer-012-rosewood">3. Son dưỡng bổ sung collagen Dior Lip Maximizer 012 Rosewood</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#4--son-duong-danh-cho-moi-dior-addict-lip-glow-007-raspberry">4. Son dưỡng dành cho môi Dior Addict Lip Glow 007 Raspberry</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#5--son-duong-dior-addict-lip-glow-matte-102-raspberry">5. Son dưỡng Dior Addict Lip Glow Matte 102 Raspberry</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#6--son-duong-collagen-dior-lip-maximizer-004-coral">6. Son dưỡng Collagen Dior Lip Maximizer 004 Coral</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#7--son-duong-moi-dior-addict-lip-glow-008-ultra-pink">7. Son dưỡng môi Dior Addict Lip Glow 008 Ultra Pink</a></li>
+<li style="margin-left:15px;" class="sub sub_1"><a href="#8--son-duong-dior-addict-lip-glow-to-the-max-201-pink">8. Son dưỡng Dior Addict Lip Glow To The Max 201 Pink</a></li>
+</ul>
+</div>
+</div>
+</aside> 
+</div>
+</div>
+
+
+<div id="footercustomarea">
+<div id="text-4" class="footerside widget_text"> <div class="textwidget"></div>
+</div> </div>
+<div class="footer-bottom dark_style">
+<style scoped>
+              .footer-bottom.dark_style{background-color: #000000;}
+              .footer-bottom.dark_style .footer_widget { color: #f5f5f5}
+              .footer-bottom.dark_style .footer_widget .title, .footer-bottom.dark_style .footer_widget h2, .footer-bottom.dark_style .footer_widget a, .footer-bottom .footer_widget.dark_style ul li a{color: #f1f1f1;}
+              .footer-bottom.dark_style .footer_widget .widget_categories ul li:before, .footer-bottom.dark_style .footer_widget .widget_archive ul li:before, .footer-bottom.dark_style .footer_widget .widget_nav_menu ul li:before{color:#fff;}
+            </style> <div class="rh-container clearfix">
+<div class="rh-flex-eq-height col_wrap_three mb0">
+<div class="footer_widget mobileblockdisplay pt25 col_item mb0">
+<div id="text-5" class="widget widget_text"><div class="title">Phong Review</div> <div class="textwidget"><p>PhongReviews là Website #1 về đánh giá và xếp hạng sản phẩm đúng, chuẩn và tốt nhất. PhongReviews giúp bạn tìm được món đồ phù hợp, đảm bảo, giá cả phải chăng!</p>
+<p><a href="https://phongreviews.com/gioi-thieu/">Giới thiệu</a></p>
+<p><a href="https://phongreviews.com/lien-he/">Liên hệ</a></p>
+<p><a href="https://phongreviews.com/chinh-sach-bao-mat/">Chính sách bảo mật</a></p>
+<p><a href="https://phongreviews.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a></p>
+<p class="has-text-color has-medium-font-size">Liên hệ quảng cáo: <a href="https://zalo.me/3374571907173015166">https://zalo.me/3374571907173015166</a></p>
+<p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e3938b8c8d849186958a869490808c8ea3848e828a8fcd808c8e">[email&#160;protected]</a></p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+<div class="footer_widget mobileblockdisplay disablemobilepadding pt25 col_item mb0">
+<div id="categories-2" class="widget widget_categories"><div class="title">Chuyên mục</div>
+<ul>
+<li class="cat-item cat-item-2452"><a href="https://phongreviews.com/chuyen-muc/am-thuc/">Ẩm thực</a>
+</li>
+<li class="cat-item cat-item-2426"><a href="https://phongreviews.com/chuyen-muc/chinh-sach/">Chính sách</a>
+</li>
+<li class="cat-item cat-item-1"><a href="https://phongreviews.com/chuyen-muc/cong-nghe/">Công Nghệ</a>
+</li>
+<li class="cat-item cat-item-2455"><a href="https://phongreviews.com/chuyen-muc/dich-vu/">Dịch vụ</a>
+</li>
+<li class="cat-item cat-item-2453"><a href="https://phongreviews.com/chuyen-muc/du-lich/">Du lịch</a>
+</li>
+<li class="cat-item cat-item-5"><a href="https://phongreviews.com/chuyen-muc/do-gia-dung/">Đồ gia dụng</a>
+</li>
+<li class="cat-item cat-item-2451"><a href="https://phongreviews.com/chuyen-muc/giai-tri/">Giải trí</a>
+</li>
+<li class="cat-item cat-item-11"><a href="https://phongreviews.com/chuyen-muc/kinh-nghiem/">Kinh nghiệm</a>
+</li>
+<li class="cat-item cat-item-8"><a href="https://phongreviews.com/chuyen-muc/me-be/">Mẹ &amp; Bé</a>
+</li>
+<li class="cat-item cat-item-10"><a href="https://phongreviews.com/chuyen-muc/nha-cua-doi-song/">Nhà cửa &amp; Đời sống</a>
+</li>
+<li class="cat-item cat-item-2456"><a href="https://phongreviews.com/chuyen-muc/noi-that/">Nội Thất</a>
+</li>
+<li class="cat-item cat-item-2454"><a href="https://phongreviews.com/chuyen-muc/giai-tri/review-phim/">Review Phim</a>
+</li>
+<li class="cat-item cat-item-2450"><a href="https://phongreviews.com/chuyen-muc/giai-tri/sach-va-truyen/">Sách và Truyện</a>
+</li>
+<li class="cat-item cat-item-6"><a href="https://phongreviews.com/chuyen-muc/suc-khoe/">Sức Khỏe &amp; Làm Đẹp</a>
+</li>
+<li class="cat-item cat-item-9"><a href="https://phongreviews.com/chuyen-muc/the-thao-da-ngoai/">Thể thao &amp; Dã ngoại</a>
+</li>
+<li class="cat-item cat-item-2457"><a href="https://phongreviews.com/chuyen-muc/thoi-trang/">Thời Trang</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_widget mobileblockdisplay pt25 col_item last mb0">
+<div id="recent-posts-2" class="widget last widget_recent_entries">
+<div class="title">Bài viết mới</div>
+<ul>
+<li>
+<a href="https://phongreviews.com/sua-rua-mat-khong-bot/">Top 8 Sữa rửa mặt không bọt tốt, dịu nhẹ không kích ứng da</a>
+</li>
+<li>
+<a href="https://phongreviews.com/quan-cafe-dep-o-da-nang/">Top 10 Quán cafe đẹp ở Đà Nẵng check-in cực HOT của giới trẻ</a>
+</li>
+<li>
+<a href="https://phongreviews.com/sach-ngay-xua-co-mot-chuyen-tinh/">[Review] sách Ngày Xưa Có Một Chuyện Tình &#8211; Nguyễn Nhật Ánh</a>
+</li>
+<li>
+<a href="https://phongreviews.com/ke-mat-maybelline/">[Review] Top 3 loại kẻ mắt Maybelline New York bán chạy nhất</a>
+</li>
+<li>
+<a href="https://phongreviews.com/cach-lam-ra-dong-thit-nhanh/">8 Cách làm rã đông thịt nhanh chóng đơn giản tại nhà</a>
+</li>
+</ul>
+</div><div id="custom_html-2" class="widget_text widget last widget_custom_html"><div class="textwidget custom-html-widget"><a href="//www.dmca.com/Protection/Status.aspx?ID=eb6780c6-4d32-45e3-ade3-34934f89e5e1" title="DMCA.com Protection Status" class="dmca-badge"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/dmca-badge-w250-5x1-01.png?ID=eb6780c6-4d32-45e3-ade3-34934f89e5e1" /><noscript><img src ="https://images.dmca.com/Badges/dmca-badge-w250-5x1-01.png?ID=eb6780c6-4d32-45e3-ade3-34934f89e5e1"  alt="DMCA.com Protection Status" /></noscript></a> <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script></div></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<span class="rehub_scroll" id="topcontrol" data-scrollto="#top_ankor"><i class="rhicon rhi-chevron-up"></i></span>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWSNWB5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="logo_mobile_wrapper"><a href="https://phongreviews.com" class="logo_image_mobile"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20160%2050'%3E%3C/svg%3E" alt="Phong Reviews" width="160" height="50" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/logo-phongreview.png" /><noscript><img src="https://phongreviews.com/wp-content/uploads/2021/04/logo-phongreview.png" alt="Phong Reviews" width="160" height="50" /></noscript></a></div>
+<div id="rhmobpnlcustom" class="rhhidden"><div id="rhmobtoppnl" style="background-color: #e53926;" class="pr15 pl15 pb15 pt15"><div class="text-center"><a href="https://phongreviews.com"><img id="mobpanelimg" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2045'%3E%3C/svg%3E" alt="Logo" width="150" height="45" data-lazy-src="https://phongreviews.com/wp-content/uploads/2021/04/logo-phongreview.png" /><noscript><img id="mobpanelimg" src="https://phongreviews.com/wp-content/uploads/2021/04/logo-phongreview.png" alt="Logo" width="150" height="45" /></noscript></a></div></div></div>
+<div id="rhslidingMenu">
+<div id="slide-menu-mobile"></div>
+</div>
+<div id="rhSplashSearch">
+<div class="search-header-contents">
+<div id="close-src-splash" class="rh-close-btn rh-hovered-scale position-relative text-center cursorpointer rh-circular-hover abdposright rtlposleft mt15 mr20 ml30" style="z-index:999"><span><i class="rhicon rhi-times whitebg roundborder50p rh-shadow4" aria-hidden="true"></i></span></div>
+<form role="search" method="get" class="search-form" action="https://phongreviews.com/">
+<input type="text" name="s" placeholder="Search" class="re-ajax-search" autocomplete="off" data-posttype="post">
+<input type="hidden" name="post_type" value="post" /> <button type="submit" class="btnsearch hideonmobile" aria-label="Search"><i class="rhicon rhi-search"></i></button>
+</form>
+<div class="re-aj-search-wrap rhscrollthin"></div>
+</div>
+</div>
+<div id="rehub-restrict-login-popup" class="rhhidden"><div class="rehub-restrict-login-popup">Enable registration in settings - general</div></div>
+<link rel='stylesheet' id='rhtoc-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/css/shortcodes/toc.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rhtitlebox-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/css/shortcodes/titlebox.css?ver=5.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='egg-bootstrap-css' href='https://phongreviews.com/wp-content/plugins/affiliate-egg/res/bootstrap/css/egg-bootstrap.css?ver=5.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='egg-products-css' href='https://phongreviews.com/wp-content/plugins/affiliate-egg/templates/style/products.css?ver=10.3.6' type='text/css' media='all' />
+<style id='egg-products-inline-css' type='text/css'>
+.egg-container .btn-danger {background-color: #ff1919 !important;border-color: #f31818 !important;} .egg-container .btn-danger:hover,.egg-container .btn-danger:focus,.egg-container .btn-danger:active {background-color: #d91616 !important;border-color: #cf1515 !important;}
+</style>
+<link rel='stylesheet' id='rhcomments-css' href='https://phongreviews.com/wp-content/themes/rehub-theme/css/comments.css?ver=1.1' type='text/css' media='all' />
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" id='kk-star-ratings-js-extra'>
+/* <![CDATA[ */
+var kk_star_ratings = {"action":"kk-star-ratings","endpoint":"https:\/\/phongreviews.com\/wp-admin\/admin-ajax.php","nonce":"62ebf035aa"};
+/* ]]> */
+</script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/plugins/kk-star-ratings/src/core/public/js/kk-star-ratings.min.js?ver=5.2.10' id='kk-star-ratings-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/inview.js?ver=1.1' id='rhinview-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/pgwmodal.js?ver=2.0' id='rhpgwmodal-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/unveil.js?ver=5.2.1' id='rhunveil-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/hoverintent.js?ver=1.9' id='rhhoverintent-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/countdown.js?ver=1.1' id='rhcountdown-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" id='rehub-js-extra'>
+/* <![CDATA[ */
+var rhscriptvars = {"back":"back","ajax_url":"\/wp-admin\/admin-ajax.php","fin":"That's all","noresults":"No results found","your_rating":"Your Rating:","nonce":"34289c2746","hotnonce":"2c52567de7","wishnonce":"6b92b99b5e","searchnonce":"4ace713a0c","filternonce":"2e65f88cf2","rating_tabs_id":"01ddb3b51e","max_temp":"10","min_temp":"-10","helpnotnonce":"a22ba48319"};
+/* ]]> */
+</script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/custom.js?ver=17.7.4' id='rehub-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" id='rehub-js-after'>
+(function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.rhthrottle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};})(this);
+        (function($){ $.fn.wpsmContents=function(){var id,h,m=$(this),w=m.closest('.widget'),s=$('.post h2, .post h3'); 
+        if(s.length == 0){w.remove();}else{ $.each(s,function(){ h=$(this); $.each(m.find('a'), function(){ if(h.text()==$(this).text()){ id=$(this).attr('href').replace('#',''); h.attr('id', id);}});}); if(id == undefined){w.remove();}} return;}})(jQuery); jQuery('.autocontents').wpsmContents(); 
+            var topMenu = jQuery('.autocontents');  
+            var menuItems = topMenu.find('a');
+            var lastId = '';
+
+            var scrollItems = menuItems.map(function(){
+                var elem = jQuery(this).attr('href');
+                var item = jQuery(elem);
+              if (item.length) { return item; }
+            });
+            jQuery(window).on('scroll', jQuery.rhthrottle( 250, function(){
+                var fromTop = jQuery(this).scrollTop()+55;
+                var cur = scrollItems.map(function(){
+                    if (jQuery(this).offset().top < fromTop)
+                    return this;
+                });
+                cur = cur[cur.length-1];
+                var id = cur && cur.length ? cur[0].id : '';
+
+                if (lastId !== id) {
+                    lastId = id;
+                    var currentmenuItem = menuItems.filter('[href="#'+id+'"]');
+                    var currentmenuIteml = currentmenuItem.offset();
+                    menuItems.removeClass('fontbold').parent().removeClass('current');
+                    currentmenuItem.addClass('fontbold').parent().addClass('current');
+                }                   
+            }));
+</script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/ajaxsearch.js?ver=17.7.4' id='rehubajaxsearch-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-includes/js/comment-reply.min.js?ver=5.9.3' id='comment-reply-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/wishcount.js?ver=1.1' id='rhwishcount-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked" data-src='https://phongreviews.com/wp-content/themes/rehub-theme/js/custom_scroll.js?ver=1.4' id='custom_scroll-js'></script>
+<script data-cfasync="false" data-wpmeteor-after="REORDER" type="javascript/blocked">!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script><script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://phongreviews.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script></body>
+</html>

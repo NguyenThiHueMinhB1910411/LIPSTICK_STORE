@@ -1,0 +1,4 @@
+[0515/141043.832:ERROR:registration_protocol_win.cc(106)] CreateFile: The system cannot find the file specified. (0x2)
+[0515/141045.064:ERROR:registration_protocol_win.cc(106)] CreateFile: The system cannot find the file specified. (0x2)
+[0515/141045.182:ERROR:registration_protocol_win.cc(106)] CreateFile: The system cannot find the file specified. (0x2)
+[0515/141045.223:ERROR:crashpad_client_win.cc(814)] not connected

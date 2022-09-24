@@ -1,0 +1,128 @@
+/* 
+header{
+    background-color: white;
+    margin-bottom: 10px;
+    border-top: 10px solid black;
+}
+
+.logo p,
+.row{
+    margin-left: 20px;
+}
+.logo a{
+    text-decoration: none;
+}
+
+.content-bag{
+    background-color: rgb(192, 94, 94);
+}
+
+.content-bag .account,
+button.signin{
+    border-radius: 0;
+}
+
+.nav-item a:hover,
+.nav-item a:active{
+    font-weight: 500;
+}
+
+.content_signin{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+button.btn_gg,
+button.btn_fb{
+    border-radius: 0px;
+}
+
+.btn_gg a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.btn_fb a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.btn_fb img,
+.btn_gg img{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.form-group input{
+    border-radius: 0;
+}
+
+button.btn_submit,
+button.btn_create{
+    border-radius: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+button.btn_submit:hover,
+button.btn_submit:active,
+button.btn_create:hover,
+button.btn_create:active{
+    background-color: #4e4a4a;
+}
+
+
+.passw, .passw1{
+    position: relative;
+}
+
+.eye_open,
+.eye_close,
+.ceye_open,
+.ceye_close{
+    position: absolute;
+    right: 10px;
+    top: 45px;
+}
+
+
+footer{
+    background-color: black;
+    color: #f1f1f1;
+    padding: 5% 0;
+}
+
+footer h5{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+
+footer p{
+    font-size: 14px;
+    color: gray;
+}
+
+footer a{
+    color: gray;
+    padding-right: 2%;
+    font-size: 20px;
+}
+
+.backtop{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #bbb8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 20px;
+    position: fixed;
+    color: black;
+} */

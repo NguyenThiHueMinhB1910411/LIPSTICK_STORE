@@ -1,0 +1,114 @@
+/* //////login-register/////// */
+
+
+/* body{
+  font-size: 100%;
+} */
+
+h1 {
+    font-family: Comfortaa;
+    font-weight: bolder;
+}
+
+label {
+    line-height: 5vw;
+    font-family: Akshar;
+    font-size: large;
+    /* color: #04AA6D; */
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.form-group {
+    border: #0000;
+}
+
+input {
+    font-size: 1vw;
+}
+
+
+/* button login */
+
+
+/* button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  } */
+
+.btn-signin {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* forgot password? */
+
+.forgot-password {
+    text-decoration: none;
+    color: #000000;
+    font-size: 75%;
+}
+
+.forgot-password:hover {
+    color: #636e72;
+}
+
+.btn-signin {
+    color: #ffffff;
+    letter-spacing: 0.5vw;
+    background-color: #000000;
+    font-size: 90%;
+    font-family: Roboto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.btn-create_account,
+.btn-create {
+    color: #000000;
+    letter-spacing: 0.2vw;
+    background-color: #c7c7c7;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 90%;
+    font-family: Roboto;
+    border: #000000;
+    opacity: 1;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/* ////// register ///////// */
+
+.btn-create {
+    color: #ffffff;
+    letter-spacing: 0.5vw;
+    background-color: #000000;
+    font-size: 90%;
+    font-family: Roboto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    opacity: 1;
+    transition: 0.3s;
+    margin-top: 5%;
+}
